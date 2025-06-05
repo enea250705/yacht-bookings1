@@ -23,27 +23,29 @@ const queryClient = new QueryClient();
 const App: React.FC = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/collection" element={<Collection />} />
-          <Route path="/collection/:typeId" element={<YachtType />} />
-          <Route path="/model/:modelId" element={<YachtModel />} />
-          <Route path="/shipyard/:shipyardId" element={<ShipyardPage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/rental" element={<Rental />} />
-          {/* Comment out these routes until the pages are created
-          <Route path="/services" element={<Services />} />
-          */}
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <BackToTopButton />
-      </Router>
+      <div className="app-container">
+        <Toaster />
+        <Sonner />
+        <Router>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/collection" element={<Collection />} />
+            <Route path="/collection/:typeId" element={<YachtType />} />
+            <Route path="/model/:modelId" element={<YachtModel />} />
+            <Route path="/shipyard/:shipyardId" element={<ShipyardPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/rental" element={<Rental />} />
+            {/* Comment out these routes until the pages are created
+            <Route path="/services" element={<Services />} />
+            */}
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <BackToTopButton />
+        </Router>
+      </div>
     </TooltipProvider>
   </QueryClientProvider>
 );
