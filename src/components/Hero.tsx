@@ -260,7 +260,7 @@ const Hero: React.FC = () => {
             of world-class yachts for discerning connoisseurs.
           </motion.p>
           
-          {/* Enhanced CTA button with magnetic effect */}
+          {/* Enhanced CTA buttons with magnetic effect */}
           <motion.div 
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
             variants={fadeInUp}
@@ -289,6 +289,37 @@ const Hero: React.FC = () => {
                       duration: 2,
                       repeat: Infinity,
                       repeatDelay: 3,
+                      ease: "easeInOut"
+                    }}
+                  />
+                </Button>
+              </Link>
+            </motion.div>
+            
+            <motion.div 
+              variants={fadeInRight}
+              className="relative group"
+            >
+              <Link to="/rental" className="inline-block">
+                <Button className="bg-gradient-to-r from-navy-800 to-navy-700 hover:from-navy-700 hover:to-navy-600 text-white border border-gold-400/30 hover:border-gold-400/60 px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium relative overflow-hidden group">
+                  <span className="flex items-center gap-2 relative z-10">
+                    <motion.div
+                      animate={{ rotate: [0, -12, 0] }}
+                      transition={{ duration: 2.5, repeat: Infinity }}
+                    >
+                    <Navigation className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:-rotate-12 duration-300" />
+                    </motion.div>
+                    <span>Class Rental</span>
+                  </span>
+                  <motion.span 
+                    className="absolute inset-0 bg-gradient-to-r from-gold-400/0 via-gold-400/10 to-gold-400/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"
+                    animate={{
+                      x: ['-100%', '100%'],
+                    }}
+                    transition={{
+                      duration: 2.5,
+                      repeat: Infinity,
+                      repeatDelay: 4,
                       ease: "easeInOut"
                     }}
                   />
