@@ -45,6 +45,22 @@ const sectionVariants = {
   }
 };
 
+// Lighter animation for sections that might block
+const lightSectionVariants = {
+  hidden: { 
+    opacity: 0, 
+    y: 30
+  },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { 
+      duration: 0.8,
+      ease: "easeOut"
+    }
+  }
+};
+
 const luxuryReveal = {
   hidden: { 
     clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
@@ -109,13 +125,25 @@ const Index: React.FC = () => {
         <Hero />
       </motion.div>
 
-      <div className="relative z-10">
+      <motion.div 
+        className="relative z-10"
+        variants={lightSectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-50px" }}
+      >
         <About />
-      </div>
+      </motion.div>
 
-      <div className="relative z-10">
+      <motion.div 
+        className="relative z-10"
+        variants={lightSectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-50px" }}
+      >
         <YachtCollection />
-      </div>
+      </motion.div>
 
       <motion.div 
         className="relative z-10"
