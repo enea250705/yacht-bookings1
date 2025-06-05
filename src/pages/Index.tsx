@@ -125,25 +125,13 @@ const Index: React.FC = () => {
         <Hero />
       </motion.div>
 
-      <motion.div 
-        className="relative z-10"
-        variants={lightSectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-      >
+      <div className="relative z-10">
         <About />
-      </motion.div>
+      </div>
 
-      <motion.div 
-        className="relative z-10"
-        variants={lightSectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-      >
+      <div className="relative z-10">
         <YachtCollection />
-      </motion.div>
+      </div>
 
       <motion.div 
         className="relative z-10"
