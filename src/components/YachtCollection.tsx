@@ -319,7 +319,7 @@ const YachtCollection: React.FC = () => {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="mb-20">
           <div className="text-center mb-6">
-            <span className="inline-block px-6 py-2 bg-gradient-to-r from-white/20 to-white/20 backdrop-blur-sm border border-white/30/30 text-white dark:text-white rounded-full text-sm font-medium mb-6 relative overflow-hidden">
+            <span className="inline-block px-6 py-2 bg-gradient-to-r from-navy-900/10 to-navy-800/10 backdrop-blur-sm border border-navy-400/30 text-navy-900 dark:text-white rounded-full text-sm font-medium mb-6 relative overflow-hidden">
               <Crown className="inline w-4 h-4 mr-2" />
               Exclusive Fleet
             </span>

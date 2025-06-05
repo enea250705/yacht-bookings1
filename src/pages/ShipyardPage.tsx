@@ -736,11 +736,11 @@ const ShipyardPage: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-gradient-to-r from-white via-white to-white rounded-xl p-8 sm:p-10 md:p-16 text-white text-center shadow-2xl shadow-white/20 overflow-hidden relative"
+            className="bg-gradient-to-r from-navy-800 via-navy-700 to-navy-800 rounded-xl p-8 sm:p-10 md:p-16 text-white text-center shadow-2xl shadow-navy-900/20 overflow-hidden relative"
           >
             {/* Decorative elements */}
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white to-transparent"></div>
-            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white to-transparent"></div>
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
             <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')]"></div>
             
             <div className="relative z-10">
@@ -763,7 +763,7 @@ const ShipyardPage: React.FC = () => {
                 whileInView={{ width: "60px" }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="h-1 bg-gradient-to-r from-white to-white mx-auto mb-6 sm:mb-8"
+                className="h-1 bg-gradient-to-r from-white/50 via-white to-white/50 mx-auto mb-6 sm:mb-8"
               />
               
               <p className="text-base sm:text-lg text-white max-w-3xl mx-auto mb-8 sm:mb-10">

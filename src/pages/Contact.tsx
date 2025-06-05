@@ -118,23 +118,8 @@ const Contact: React.FC = () => {
           >
             <motion.div
               className="inline-block mb-6"
-              animate={{ 
-                backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
-              }}
-              transition={{ 
-                duration: 4, 
-                repeat: Infinity,
-                ease: "linear"
-              }}
-              style={{
-                background: 'linear-gradient(90deg, #D4AF37, #FFD700, #D4AF37)',
-                backgroundSize: '200% 200%',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text'
-              }}
             >
-              <h1 className="text-5xl md:text-7xl font-playfair font-bold">
+              <h1 className="text-5xl md:text-7xl font-playfair font-bold text-white">
                 Connect with
               </h1>
             </motion.div>

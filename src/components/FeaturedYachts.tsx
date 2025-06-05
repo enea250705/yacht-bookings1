@@ -96,15 +96,15 @@ const FeaturedYachts: React.FC = () => {
             className="text-center mb-12"
           >
             <motion.span 
-              className="inline-block px-6 py-3 bg-gradient-to-r from-white/20 to-white/20 backdrop-blur-sm border border-white/30/30 text-white dark:text-white rounded-full text-sm font-medium mb-8 relative overflow-hidden"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-navy-900/10 to-navy-800/10 backdrop-blur-sm border border-navy-400/30 text-navy-900 dark:text-white rounded-full text-sm font-medium mb-8 relative overflow-hidden"
               whileHover={{ 
                 scale: 1.05,
-                borderColor: "rgba(255, 255, 255, 0.5)"
+                borderColor: "rgba(15, 23, 42, 0.5)"
               }}
               transition={{ duration: 0.3 }}
             >
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-900/20 to-transparent"
                 animate={{
                   x: ['-100%', '100%'],
                   opacity: [0, 1, 0],

@@ -172,17 +172,21 @@ const Navbar: React.FC = () => {
                   className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 ${
                     location.pathname === item.href
                       ? scrolled 
-                        ? 'text-white' 
+                        ? 'text-navy-900' 
                         : 'text-white'
                       : scrolled 
-                        ? 'text-gray-700 hover:text-white' 
+                        ? 'text-gray-700 hover:text-navy-900' 
                         : 'text-white hover:text-white'
                   }`}
                 >
                   {item.name}
                   {location.pathname === item.href && (
                     <motion.div
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-white to-white rounded-full"
+                      className={`absolute bottom-0 left-0 right-0 h-0.5 rounded-full ${
+                        scrolled 
+                          ? 'bg-gradient-to-r from-navy-900 to-navy-800'
+                          : 'bg-gradient-to-r from-white to-white'
+                      }`}
                       layoutId="activeTab"
                       transition={{ duration: 0.3 }}
                     />
@@ -201,7 +205,7 @@ const Navbar: React.FC = () => {
             >
               <Button 
                 asChild
-                className={`relative overflow-hidden bg-gradient-to-r from-white to-white hover:from-white hover:to-white text-white border-0 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl shadow-white/50/25 hover:shadow-white/50/40 ${
+                className={`relative overflow-hidden bg-gradient-to-r from-navy-900 to-navy-800 hover:from-navy-800 hover:to-navy-700 text-white border border-white/20 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl shadow-navy-900/25 hover:shadow-navy-900/40 ${
                   scrolled ? 'shadow-lg' : 'shadow-xl'
                 }`}
               >
@@ -314,7 +318,7 @@ const Navbar: React.FC = () => {
               <div className="flex items-center justify-between p-6 border-b border-white/10">
                 <div className="flex items-center space-x-3">
                   <motion.div 
-                    className="w-10 h-10 bg-gradient-to-br from-white to-white rounded-xl flex items-center justify-center"
+                    className="w-10 h-10 bg-gradient-to-br from-navy-600 to-navy-800 rounded-xl flex items-center justify-center"
                     whileHover={{ scale: 1.05, rotate: 5 }}
                       >
                     <Anchor className="w-5 h-5 text-white" />
@@ -391,7 +395,7 @@ const Navbar: React.FC = () => {
                     >
                       <Button 
                         asChild
-                    className="w-full bg-gradient-to-r from-white to-white hover:from-white hover:to-white text-white font-semibold py-4 rounded-xl shadow-lg"
+                    className="w-full bg-gradient-to-r from-navy-900 to-navy-800 hover:from-navy-800 hover:to-navy-700 text-white border border-white/20 font-semibold py-4 rounded-xl shadow-lg"
                       >
                         <Link to="/contact" onClick={() => setIsOpen(false)}>
                       <Crown className="w-5 h-5 mr-2" />

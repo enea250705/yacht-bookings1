@@ -1300,3 +1300,4 @@ document.head.appendChild(styleElement);
 
 export default YachtModelPage; 
                   
+                  

@@ -91,53 +91,7 @@ const RentalComingSoon: React.FC = () => {
         ))}
       </div>
 
-      {/* Enhanced Wave Animation */}
-      <div className="absolute inset-0 opacity-20">
-        <svg 
-          viewBox="0 0 1440 320" 
-          className="absolute bottom-0 left-0 w-full"
-          preserveAspectRatio="none"
-        >
-          <motion.path 
-            d="M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,218.7C672,213,768,171,864,176C960,181,1056,235,1152,245.3C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-            fill="url(#wave-gradient)"
-            animate={{
-              y: [0, 15, 0],
-              transition: {
-                duration: 8,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut"
-              }
-            }}
-          />
-          <motion.path 
-            d="M0,256L48,245.3C96,235,192,213,288,208C384,203,480,213,576,229.3C672,245,768,267,864,250.7C960,235,1056,181,1152,181.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-            fill="url(#wave-gradient-2)"
-            animate={{
-              y: [0, -10, 0],
-              transition: {
-                duration: 12,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut"
-              }
-            }}
-          />
-          <defs>
-            <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#FFCC26" stopOpacity="0.4" />
-              <stop offset="50%" stopColor="#FFCC26" stopOpacity="0.8" />
-              <stop offset="100%" stopColor="#FFCC26" stopOpacity="0.4" />
-            </linearGradient>
-            <linearGradient id="wave-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#FFCC26" stopOpacity="0.2" />
-              <stop offset="50%" stopColor="#FFCC26" stopOpacity="0.5" />
-              <stop offset="100%" stopColor="#FFCC26" stopOpacity="0.2" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -210,7 +164,7 @@ const RentalComingSoon: React.FC = () => {
                 
                 {/* Floating crown icon */}
                 <motion.div
-                  className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-white to-white rounded-2xl flex items-center justify-center"
+                  className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-navy-600 to-navy-800 rounded-2xl flex items-center justify-center"
                   animate={{ rotate: [0, 5, 0] }}
                   transition={{ duration: 4, repeat: Infinity }}
                 >

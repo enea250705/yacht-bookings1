@@ -363,7 +363,7 @@ const Services: React.FC = () => {
         >
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h3 className="text-3xl lg:text-4xl font-bold text-navy-900 mb-4">
-              Our <span className="text-white">Process</span>
+              Our <span className="text-navy-900">Process</span>
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               A seamless journey from initial consultation to ongoing support
@@ -400,11 +400,11 @@ const Services: React.FC = () => {
                   className="relative z-10 bg-white rounded-2xl p-8 shadow-lg shadow-black/5 border border-gray-100 group-hover:shadow-xl group-hover:shadow-black/10 transition-all duration-500"
                   whileHover={{ y: -5 }}
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-white rounded-2xl mb-4 group-hover:from-white group-hover:to-white transition-all duration-300">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-navy-600 to-navy-800 rounded-2xl mb-4 group-hover:from-navy-700 group-hover:to-navy-900 transition-all duration-300 text-white">
                     {process.icon}
                   </div>
                   
-                  <div className="text-4xl font-bold text-white mb-2">
+                  <div className="text-4xl font-bold text-navy-900 mb-2">
                     {process.step}
                   </div>
                   

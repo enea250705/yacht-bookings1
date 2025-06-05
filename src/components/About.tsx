@@ -102,7 +102,7 @@ const About: React.FC = () => {
       number: "50+",
       label: "Awards Won",
       description: "International maritime excellence",
-      color: "from-white to-white"
+      color: "from-navy-600 to-navy-800"
     },
     {
       icon: <Crown className="w-8 h-8" />,
@@ -195,12 +195,12 @@ const About: React.FC = () => {
         
         {/* Enhanced Section Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-white/10 to-white/10 border border-white/40/30 rounded-full mb-6 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-navy-900/10 to-navy-800/10 border border-navy-400/30 rounded-full mb-6 backdrop-blur-sm">
             <div>
-              <Anchor className="w-5 h-5 text-white" />
+              <Anchor className="w-5 h-5 text-navy-900" />
             </div>
-            <span className="text-white font-medium tracking-wider uppercase text-sm">About Excellence</span>
-            <Sparkles className="w-4 h-4 text-white" />
+            <span className="text-navy-900 font-medium tracking-wider uppercase text-sm">About Excellence</span>
+            <Sparkles className="w-4 h-4 text-navy-900" />
           </div>
           
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight">
