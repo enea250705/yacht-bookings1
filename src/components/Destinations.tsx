@@ -64,7 +64,7 @@ const Destinations: React.FC = () => {
     >
       {/* Decorative elements */}
       <motion.div 
-        className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-400/30 to-transparent"
+        className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
@@ -72,7 +72,7 @@ const Destinations: React.FC = () => {
       ></motion.div>
       
       <motion.div 
-        className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-400/30 to-transparent"
+        className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
@@ -94,7 +94,7 @@ const Destinations: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-sm uppercase tracking-widest text-gold-600 font-medium">Exquisite Locations</span>
+              <span className="text-sm uppercase tracking-widest text-white font-medium">Exquisite Locations</span>
             </motion.div>
             
             <motion.h2 
@@ -106,7 +106,7 @@ const Destinations: React.FC = () => {
             >
               Charter Destinations
               <motion.span 
-                className="absolute -bottom-3 left-0 h-0.5 w-full bg-gradient-to-r from-gold-400 to-gold-600"
+                className="absolute -bottom-3 left-0 h-0.5 w-full bg-gradient-to-r from-white to-white"
                 initial={{ width: 0 }}
                 whileInView={{ width: "100%" }}
                 viewport={{ once: true }}
@@ -178,7 +178,7 @@ const Destinations: React.FC = () => {
                     </div>
                     
                     <motion.div 
-                      className="h-px w-16 bg-gold-400 mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                      className="h-px w-16 bg-white/40 mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500"
                       initial={{ x: -10, opacity: 0 }}
                       whileHover={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.3 }}
@@ -212,7 +212,7 @@ const Destinations: React.FC = () => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <motion.div 
-          className="h-px w-full max-w-md mx-auto bg-gradient-to-r from-transparent via-gold-400 to-transparent opacity-50"
+          className="h-px w-full max-w-md mx-auto bg-gradient-to-r from-transparent via-white to-transparent opacity-50"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}

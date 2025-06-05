@@ -221,11 +221,11 @@ const ShipyardPage: React.FC = () => {
         <Navbar />
         <div className="container mx-auto px-4 pt-32 pb-20">
           <h1 className="text-3xl md:text-4xl font-playfair font-semibold text-white mb-3">Shipyard Not Found</h1>
-          <div className="w-20 h-1 bg-gradient-to-r from-gold-400 to-gold-600 mb-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-white to-white mb-6"></div>
           <p className="mt-4 text-blue-100 text-lg">The shipyard you're looking for (ID: {shipyardId}) doesn't exist or has been removed.</p>
           <Link 
             to="/collection" 
-            className="mt-8 inline-flex items-center text-gold-400 font-medium hover:text-gold-300 group"
+            className="mt-8 inline-flex items-center text-white font-medium hover:text-white group"
           >
             <ArrowRight className="mr-2 h-5 w-5 rotate-180 group-hover:-translate-x-1 transition-transform" />
             <span>Return to Shipyards</span>
@@ -267,9 +267,9 @@ const ShipyardPage: React.FC = () => {
           className="absolute inset-0 z-0"
           animate={{
             background: [
-              'linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)',
-              'linear-gradient(225deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)',
-              'linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)'
+              'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+              'linear-gradient(225deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+              'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)'
             ]
           }}
           transition={{
@@ -292,7 +292,7 @@ const ShipyardPage: React.FC = () => {
           >
             <Link 
               to="/collection" 
-              className="px-6 py-2 bg-navy-800/40 backdrop-blur-md rounded-full text-sm uppercase tracking-wider inline-block hover:bg-navy-800/60 transition-all duration-300 border border-gold-500/20 group"
+              className="px-6 py-2 bg-navy-800/40 backdrop-blur-md rounded-full text-sm uppercase tracking-wider inline-block hover:bg-navy-800/60 transition-all duration-300 border border-white/50/20 group"
             >
               <span className="flex items-center text-white">
                 <ArrowRight className="w-4 h-4 mr-2 rotate-180 group-hover:-translate-x-1 transition-transform" />
@@ -316,9 +316,9 @@ const ShipyardPage: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mx-auto mb-6 sm:mb-8 relative"
           >
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-tr from-gold-600 to-gold-400 p-0.5 mx-auto">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-tr from-white to-white p-0.5 mx-auto">
               <div className="w-full h-full rounded-full bg-navy-900/80 backdrop-blur-sm flex items-center justify-center">
-                <Sailboat className="h-10 w-10 sm:h-12 sm:w-12 text-gold-400" />
+                <Sailboat className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
               </div>
             </div>
             <motion.div
@@ -354,7 +354,7 @@ const ShipyardPage: React.FC = () => {
             initial={{ width: 0 }}
             animate={{ width: "100px" }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="h-1 bg-gradient-to-r from-gold-400/0 via-gold-400 to-gold-400/0 mx-auto mb-6 sm:mb-8"
+            className="h-1 bg-gradient-to-r from-white/0 via-white to-white/0 mx-auto mb-6 sm:mb-8"
           />
           
           {/* Headline text */}
@@ -375,7 +375,7 @@ const ShipyardPage: React.FC = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
           >
             <Button 
-              className="w-full sm:w-auto bg-gold-500 hover:bg-gold-600 text-navy-900 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-medium transition-all duration-300 group shadow-xl shadow-gold-500/20"
+              className="w-full sm:w-auto bg-white/50 hover:bg-white/60 text-navy-900 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base font-medium transition-all duration-300 group shadow-xl shadow-white/50/20"
               onClick={scrollToModels}
             >
               <span>Explore Models</span>
@@ -383,7 +383,7 @@ const ShipyardPage: React.FC = () => {
             </Button>
             
             <Button 
-              className="w-full sm:w-auto bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base transition-all duration-300 group"
+              className="w-full sm:w-auto bg-navy-900/20 backdrop-blur-sm border border-white/20 text-white hover:bg-navy-900/30 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base transition-all duration-300 group"
               onClick={scrollToAbout}
             >
               <span>About {shipyard.name}</span>
@@ -405,7 +405,7 @@ const ShipyardPage: React.FC = () => {
             transition={{ duration: 1.5, repeat: Infinity }}
           >
             <motion.div 
-              className="w-1.5 h-1.5 bg-gold-400 rounded-full"
+              className="w-1.5 h-1.5 bg-white/40 rounded-full"
               animate={{ 
                 y: [0, 12, 0],
                 opacity: [0, 1, 0]
@@ -425,8 +425,8 @@ const ShipyardPage: React.FC = () => {
         {/* Luxury Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj48cGF0aCBkPSJNMCAyMGgyME0yMCAyMHYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-30"></div>
-          <div className="absolute top-10 left-10 w-32 h-32 bg-gold-400/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-gold-400/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-10 left-10 w-32 h-32 bg-white/40/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-white/40/5 rounded-full blur-3xl"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <motion.div 
@@ -438,14 +438,14 @@ const ShipyardPage: React.FC = () => {
           >
             <div className="text-center mb-10 sm:mb-16">
               <div className="inline-block mb-4 sm:mb-6">
-                <div className="bg-gold-400/20 rounded-full p-2 sm:p-3">
-                  <Anchor className="h-6 w-6 sm:h-8 sm:w-8 text-gold-400" />
+                <div className="bg-white/40/20 rounded-full p-2 sm:p-3">
+                  <Anchor className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-semibold text-white mb-4 sm:mb-6">
                 About {shipyard.name}
               </h2>
-              <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mb-4 sm:mb-6"></div>
+              <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-transparent via-white to-transparent mx-auto mb-4 sm:mb-6"></div>
               <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto mb-6 sm:mb-10">
                 {extendedShipyard?.fullDescription?.slice(0, 160) || shipyard.description}...
               </p>
@@ -466,8 +466,8 @@ const ShipyardPage: React.FC = () => {
                   {extendedShipyard?.story && (
                       <div className="mb-8">
                       <h3 className="text-2xl font-medium text-white mb-4 flex items-center">
-                        <span className="bg-gold-400/10 rounded-full p-1 mr-3">
-                          <Book className="h-5 w-5 text-gold-400" />
+                        <span className="bg-white/40/10 rounded-full p-1 mr-3">
+                          <Book className="h-5 w-5 text-white" />
                         </span>
                           Our Story
                         </h3>
@@ -487,8 +487,8 @@ const ShipyardPage: React.FC = () => {
                       className="mt-6 sm:mt-10"
                     >
                       <h3 className="text-xl sm:text-2xl font-medium text-white mb-4 sm:mb-6 flex items-center">
-                        <span className="bg-gold-400/10 rounded-full p-1 mr-2 sm:mr-3">
-                          <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400" />
+                        <span className="bg-white/40/10 rounded-full p-1 mr-2 sm:mr-3">
+                          <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                         </span>
                         Our Specialties
                           </h3>
@@ -501,10 +501,10 @@ const ShipyardPage: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 * index }}
                             viewport={{ once: true }}
-                            className="flex items-start p-3 sm:p-4 bg-navy-800/30 backdrop-blur-sm rounded-lg border border-white/10 hover:border-gold-400/30 transition-all duration-300 hover:transform hover:-translate-y-1"
+                            className="flex items-start p-3 sm:p-4 bg-navy-800/30 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/40/30 transition-all duration-300 hover:transform hover:-translate-y-1"
                           >
-                            <div className="bg-gold-400/20 rounded-full p-1 mr-2 sm:mr-3 mt-0.5">
-                              <Check className="w-3 h-3 sm:w-4 sm:h-4 text-gold-400" />
+                            <div className="bg-white/40/20 rounded-full p-1 mr-2 sm:mr-3 mt-0.5">
+                              <Check className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                             </div>
                             <div>
                               <span className="text-white text-sm sm:text-base">{specialty}</span>
@@ -525,8 +525,8 @@ const ShipyardPage: React.FC = () => {
                       className="mt-6 sm:mt-10"
                     >
                       <h3 className="text-xl sm:text-2xl font-medium text-white mb-4 sm:mb-6 flex items-center">
-                        <span className="bg-gold-400/10 rounded-full p-1 mr-2 sm:mr-3">
-                          <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400" />
+                        <span className="bg-white/40/10 rounded-full p-1 mr-2 sm:mr-3">
+                          <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                         </span>
                         Our Values
                       </h3>
@@ -539,11 +539,11 @@ const ShipyardPage: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 * index }}
                             viewport={{ once: true }}
-                            className="p-3 sm:p-4 bg-navy-800/30 backdrop-blur-sm rounded-lg border border-white/10 hover:border-gold-400/30 transition-all duration-300 hover:transform hover:-translate-y-1"
+                            className="p-3 sm:p-4 bg-navy-800/30 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/40/30 transition-all duration-300 hover:transform hover:-translate-y-1"
                           >
                             <div className="flex items-center mb-2">
-                              <div className="bg-gold-400/20 rounded-full p-1 sm:p-2 mr-2 sm:mr-3">
-                                <Star className="w-3 h-3 sm:w-4 sm:h-4 text-gold-400" />
+                              <div className="bg-white/40/20 rounded-full p-1 sm:p-2 mr-2 sm:mr-3">
+                                <Star className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                               </div>
                               <h4 className="font-medium text-white text-sm sm:text-base">{value.title}</h4>
                             </div>
@@ -564,13 +564,13 @@ const ShipyardPage: React.FC = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   className="relative"
                 >
-                  <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-16 h-16 sm:w-24 sm:h-24 border-l-2 border-t-2 border-gold-400/70"></div>
+                  <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-16 h-16 sm:w-24 sm:h-24 border-l-2 border-t-2 border-white/40/70"></div>
                   <img 
                     src={extendedShipyard?.featuredImage || shipyard.image} 
                     alt={shipyard.name} 
                     className="w-full h-auto object-cover rounded-lg shadow-2xl"
                   />
-                  <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-16 h-16 sm:w-24 sm:h-24 border-r-2 border-b-2 border-gold-400/70"></div>
+                  <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-16 h-16 sm:w-24 sm:h-24 border-r-2 border-b-2 border-white/40/70"></div>
                 </motion.div>
                 
                 {extendedShipyard?.website && (
@@ -582,27 +582,27 @@ const ShipyardPage: React.FC = () => {
                     className="mt-8 sm:mt-12 p-4 sm:p-6 bg-navy-800/40 backdrop-blur-sm rounded-lg border border-white/10"
                   >
                     <h3 className="text-lg sm:text-xl font-medium text-white mb-3 sm:mb-4 flex items-center">
-                      <span className="bg-gold-400/10 rounded-full p-1 mr-2 sm:mr-3">
-                        <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400" />
+                      <span className="bg-white/40/10 rounded-full p-1 mr-2 sm:mr-3">
+                        <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                       </span>
                       Contact Information
                     </h3>
                     <div className="space-y-3 sm:space-y-4">
                       <div className="flex items-center">
-                        <Globe className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400 mr-2 sm:mr-3 flex-shrink-0" />
-                        <a href={`https://${extendedShipyard.website}`} target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-gold-400 transition-colors text-sm sm:text-base truncate">
+                        <Globe className="h-4 w-4 sm:h-5 sm:w-5 text-white mr-2 sm:mr-3 flex-shrink-0" />
+                        <a href={`https://${extendedShipyard.website}`} target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-white transition-colors text-sm sm:text-base truncate">
                           {extendedShipyard.website}
                         </a>
                       </div>
                       {extendedShipyard?.headquarters && (
                         <div className="flex items-center">
-                          <Map className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400 mr-2 sm:mr-3 flex-shrink-0" />
+                          <Map className="h-4 w-4 sm:h-5 sm:w-5 text-white mr-2 sm:mr-3 flex-shrink-0" />
                           <span className="text-blue-100 text-sm sm:text-base">{extendedShipyard.headquarters}</span>
                         </div>
                       )}
                       <div className="flex items-center">
-                        <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400 mr-2 sm:mr-3 flex-shrink-0" />
-                        <a href="mailto:info@vistaoasis.com" className="text-blue-100 hover:text-gold-400 transition-colors text-sm sm:text-base">
+                        <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-white mr-2 sm:mr-3 flex-shrink-0" />
+                        <a href="mailto:info@vistaoasis.com" className="text-blue-100 hover:text-white transition-colors text-sm sm:text-base">
                           info@vistaoasis.com
                         </a>
                       </div>
@@ -620,8 +620,8 @@ const ShipyardPage: React.FC = () => {
         {/* Luxury Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj48cGF0aCBkPSJNMCAyMGgyME0yMCAyMHYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-30"></div>
-          <div className="absolute top-20 right-10 w-32 h-32 bg-gold-400/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-10 w-40 h-40 bg-gold-400/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-10 w-32 h-32 bg-white/40/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 left-10 w-40 h-40 bg-white/40/5 rounded-full blur-3xl"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -632,14 +632,14 @@ const ShipyardPage: React.FC = () => {
             className="text-center mb-10 sm:mb-16"
           >
             <div className="inline-block mb-4 sm:mb-6">
-              <div className="bg-gold-400/20 rounded-full p-2 sm:p-3">
-                <Ship className="h-6 w-6 sm:h-8 sm:w-8 text-gold-400" />
+              <div className="bg-white/40/20 rounded-full p-2 sm:p-3">
+                <Ship className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-semibold text-white mb-4 sm:mb-6">
               {shipyard.name} Fleet
                   </h2>
-            <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mb-4 sm:mb-6"></div>
+            <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-transparent via-white to-transparent mx-auto mb-4 sm:mb-6"></div>
             <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">
               Explore our collection of exceptional vessels, each crafted with precision and uncompromising quality.
                   </p>
@@ -659,7 +659,7 @@ const ShipyardPage: React.FC = () => {
                 >
                       <Link 
                         to={`/model/${model.id}`}
-                    className="block bg-navy-800/40 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group border border-white/10 hover:border-gold-400/30 h-full flex flex-col"
+                    className="block bg-navy-800/40 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group border border-white/10 hover:border-white/40/30 h-full flex flex-col"
                       >
                     <div className="h-60 sm:h-80 relative overflow-hidden">
                           <img 
@@ -672,10 +672,10 @@ const ShipyardPage: React.FC = () => {
                       <div className="absolute inset-0 bg-navy-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       <div className="absolute bottom-0 left-0 p-4 sm:p-6">
                         <h3 className="text-xl sm:text-2xl font-playfair font-medium text-white mb-2">{model.name}</h3>
-                        <div className="w-0 h-0.5 bg-gold-400 transition-all duration-500 group-hover:w-20 sm:group-hover:w-24"></div>
+                        <div className="w-0 h-0.5 bg-white/40 transition-all duration-500 group-hover:w-20 sm:group-hover:w-24"></div>
                       </div>
                       
-                      <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-white/10 backdrop-blur-md rounded-full py-1 px-2 sm:px-3 text-white text-xs font-medium">
+                      <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-navy-900/20 backdrop-blur-md rounded-full py-1 px-2 sm:px-3 text-white text-xs font-medium">
                         {model.length}
                       </div>
                           </div>
@@ -683,27 +683,27 @@ const ShipyardPage: React.FC = () => {
                       <p className="text-blue-100 mb-5 sm:mb-6 flex-grow text-sm sm:text-base text-center sm:text-left w-full">{model.shortDesc}</p>
                       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-2 mb-5 sm:mb-6 border-t border-white/10 pt-4 w-full">
                         <div className="flex flex-col items-center text-center text-xs text-blue-200">
-                          <Maximize className="w-4 h-4 mb-1 text-gold-400/70" />
+                          <Maximize className="w-4 h-4 mb-1 text-white/70" />
                           <span className="font-medium">{model.length.split(' ')[0]}</span>
                           <span className="text-[10px] text-blue-300/50 uppercase">Length</span>
                         </div>
                         <div className="flex flex-col items-center text-center text-xs text-blue-200">
-                          <Users className="w-4 h-4 mb-1 text-gold-400/70" />
+                          <Users className="w-4 h-4 mb-1 text-white/70" />
                           <span className="font-medium">{model.specs.guests}</span>
                           <span className="text-[10px] text-blue-300/50 uppercase">Guests</span>
                             </div>
                         <div className="flex flex-col items-center text-center text-xs text-blue-200">
-                          <Ship className="w-4 h-4 mb-1 text-gold-400/70" />
+                          <Ship className="w-4 h-4 mb-1 text-white/70" />
                           <span className="font-medium">{model.specs.cabins}</span>
                           <span className="text-[10px] text-blue-300/50 uppercase">Cabins</span>
                             </div>
                         <div className="flex flex-col items-center text-center text-xs text-blue-200">
-                          <Gauge className="w-4 h-4 mb-1 text-gold-400/70" />
+                          <Gauge className="w-4 h-4 mb-1 text-white/70" />
                           <span className="font-medium">{model.specs.maxSpeed.split(' ')[0]}</span>
                           <span className="text-[10px] text-blue-300/50 uppercase">Knots</span>
                             </div>
                           </div>
-                      <div className="flex items-center justify-center w-full sm:justify-start text-gold-400 font-medium group-hover:text-gold-300 text-sm sm:text-base border-t border-white/10 pt-4 sm:border-0 sm:pt-0">
+                      <div className="flex items-center justify-center w-full sm:justify-start text-white font-medium group-hover:text-white text-sm sm:text-base border-t border-white/10 pt-4 sm:border-0 sm:pt-0">
                         <span>Explore Details</span>
                             <ChevronRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                           </div>
@@ -727,8 +727,8 @@ const ShipyardPage: React.FC = () => {
         {/* Luxury Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj48cGF0aCBkPSJNMCAyMGgyME0yMCAyMHYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-30"></div>
-          <div className="absolute top-10 left-20 w-32 h-32 bg-gold-400/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-40 h-40 bg-gold-400/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-10 left-20 w-32 h-32 bg-white/40/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-white/40/5 rounded-full blur-3xl"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -736,11 +736,11 @@ const ShipyardPage: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-gradient-to-r from-gold-900 via-gold-800 to-gold-900 rounded-xl p-8 sm:p-10 md:p-16 text-white text-center shadow-2xl shadow-gold-900/20 overflow-hidden relative"
+            className="bg-gradient-to-r from-white via-white to-white rounded-xl p-8 sm:p-10 md:p-16 text-white text-center shadow-2xl shadow-white/20 overflow-hidden relative"
           >
             {/* Decorative elements */}
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-200 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-200 to-transparent"></div>
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white to-transparent"></div>
             <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')]"></div>
             
             <div className="relative z-10">
@@ -749,9 +749,9 @@ const ShipyardPage: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center mb-6 sm:mb-8 border border-gold-300/20"
+                className="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center mb-6 sm:mb-8 border border-white/30/20"
               >
-                <Mail className="h-6 w-6 sm:h-8 sm:w-8 text-gold-300" />
+                <Mail className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </motion.div>
               
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-semibold mb-4 sm:mb-6">
@@ -763,16 +763,16 @@ const ShipyardPage: React.FC = () => {
                 whileInView={{ width: "60px" }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="h-1 bg-gradient-to-r from-gold-400 to-gold-200 mx-auto mb-6 sm:mb-8"
+                className="h-1 bg-gradient-to-r from-white to-white mx-auto mb-6 sm:mb-8"
               />
               
-              <p className="text-base sm:text-lg text-gold-100 max-w-3xl mx-auto mb-8 sm:mb-10">
+              <p className="text-base sm:text-lg text-white max-w-3xl mx-auto mb-8 sm:mb-10">
               Our yacht specialists can guide you through the entire process, from model selection to customization options and delivery.
             </p>
               
             <Link 
               to="/contact" 
-                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-navy-900 hover:bg-gold-50 rounded-full text-sm sm:text-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl shadow-navy-900/20 hover:shadow-navy-900/30 group"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-navy-900 hover:bg-white rounded-full text-sm sm:text-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl shadow-navy-900/20 hover:shadow-navy-900/30 group"
             >
                 <span>Contact Our Experts</span>
                 <ChevronRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transform group-hover:translate-x-1 transition-transform" />
@@ -788,3 +788,4 @@ const ShipyardPage: React.FC = () => {
 };
 
 export default ShipyardPage; 
+

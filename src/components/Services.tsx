@@ -92,7 +92,7 @@ const Services: React.FC = () => {
       description: "Discover your perfect vessel with our curated collection of the world's finest yachts. Expert guidance through every step of your acquisition journey.",
       features: ["Global Network", "Expert Valuation", "Legal Support", "After-Sale Care"],
       image: "/lekker 45-2.jpg",
-      gradient: "from-gold-500 to-amber-600"
+      gradient: "from-white to-amber-600"
     },
     {
       icon: <Settings className="w-8 h-8" />,
@@ -137,7 +137,7 @@ const Services: React.FC = () => {
           style={{ y }}
         >
           <div className="absolute top-1/3 left-1/6 w-96 h-96 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/6 w-96 h-96 bg-gradient-to-r from-gold-400 to-orange-500 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/3 right-1/6 w-96 h-96 bg-gradient-to-r from-white to-orange-500 rounded-full blur-3xl" />
           </motion.div>
 
         {/* Animated particles */}
@@ -145,7 +145,7 @@ const Services: React.FC = () => {
           {[...Array(12)].map((_, i) => (
       <motion.div
               key={i}
-              className="absolute w-2 h-2 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full"
+              className="absolute w-2 h-2 bg-gradient-to-r from-white to-white rounded-full"
         style={{
                 left: `${10 + (i * 8)}%`,
                 top: `${20 + (i % 3) * 25}%`,
@@ -176,7 +176,7 @@ const Services: React.FC = () => {
             >
               <motion.div
             variants={itemVariants}
-            className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-navy-500/10 to-gold-500/10 border border-navy-400/30 rounded-full mb-6"
+            className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-navy-500/10 to-white/10 border border-navy-400/30 rounded-full mb-6"
           >
             <Compass className="w-5 h-5 text-navy-600" />
             <span className="text-navy-700 font-medium tracking-wider uppercase text-sm">Premium Services</span>
@@ -187,7 +187,7 @@ const Services: React.FC = () => {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight"
           >
             <span className="block">Exceptional</span>
-            <span className="block bg-gradient-to-r from-gold-600 to-gold-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-white to-white bg-clip-text text-transparent">
               Maritime Services
             </span>
               </motion.h2>
@@ -267,7 +267,7 @@ const Services: React.FC = () => {
 
                 {/* Hover effect overlay */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-gold-500/10 to-navy-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
+                  className="absolute inset-0 bg-gradient-to-br from-white/10 to-navy-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
                   style={{ pointerEvents: 'none' }}
                 />
               </div>
@@ -287,24 +287,24 @@ const Services: React.FC = () => {
             className="bg-gradient-to-br from-navy-900 to-navy-800 rounded-3xl p-8 lg:p-12 shadow-2xl relative overflow-hidden"
           >
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-gold-500/20 to-transparent rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-white/20 to-transparent rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-blue-500/20 to-transparent rounded-full blur-3xl" />
             
             <div className="relative z-10">
               <div className="text-center mb-12">
                 <motion.div
-                  className="inline-flex items-center gap-3 px-6 py-3 bg-gold-500/20 border border-gold-400/30 rounded-full mb-6"
+                  className="inline-flex items-center gap-3 px-6 py-3 bg-white/50/20 border border-white/40/30 rounded-full mb-6"
                   variants={itemVariants}
                 >
-                  <Waves className="w-5 h-5 text-gold-300" />
-                  <span className="text-gold-200 font-medium tracking-wider uppercase text-sm">Why Choose Us</span>
+                  <Waves className="w-5 h-5 text-white" />
+                  <span className="text-white font-medium tracking-wider uppercase text-sm">Why Choose Us</span>
                 </motion.div>
                 
                 <motion.h3
                   variants={itemVariants}
                   className="text-3xl lg:text-4xl font-bold text-white mb-4"
                 >
-                  Unmatched <span className="text-gold-400">Excellence</span>
+                  Unmatched <span className="text-white">Excellence</span>
                 </motion.h3>
                 
                 <motion.p
@@ -325,7 +325,7 @@ const Services: React.FC = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <motion.div
-                      className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300"
+                      className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-white rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300"
                       whileHover={{ rotate: 5 }}
                     >
                       {feature.icon}
@@ -345,7 +345,7 @@ const Services: React.FC = () => {
                 variants={itemVariants}
                 className="text-center mt-12"
               >
-                <Button className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-black font-semibold px-8 py-4 rounded-full shadow-lg shadow-gold-500/25 hover:shadow-xl hover:shadow-gold-500/30 transition-all duration-300 group">
+                <Button className="bg-gradient-to-r from-white to-white hover:from-white hover:to-white text-black font-semibold px-8 py-4 rounded-full shadow-lg shadow-white/50/25 hover:shadow-xl hover:shadow-white/50/30 transition-all duration-300 group">
                   <span>Schedule Consultation</span>
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -363,7 +363,7 @@ const Services: React.FC = () => {
         >
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h3 className="text-3xl lg:text-4xl font-bold text-navy-900 mb-4">
-              Our <span className="text-gold-600">Process</span>
+              Our <span className="text-white">Process</span>
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               A seamless journey from initial consultation to ongoing support
@@ -400,11 +400,11 @@ const Services: React.FC = () => {
                   className="relative z-10 bg-white rounded-2xl p-8 shadow-lg shadow-black/5 border border-gray-100 group-hover:shadow-xl group-hover:shadow-black/10 transition-all duration-500"
                   whileHover={{ y: -5 }}
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gold-100 to-gold-200 rounded-2xl mb-4 group-hover:from-gold-200 group-hover:to-gold-300 transition-all duration-300">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-white rounded-2xl mb-4 group-hover:from-white group-hover:to-white transition-all duration-300">
                     {process.icon}
                   </div>
                   
-                  <div className="text-4xl font-bold text-gold-600 mb-2">
+                  <div className="text-4xl font-bold text-white mb-2">
                     {process.step}
                   </div>
                   
@@ -419,7 +419,7 @@ const Services: React.FC = () => {
                 
                 {/* Connection line */}
                 {index < 2 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-px bg-gradient-to-r from-gold-300 to-gold-500 z-0" />
+                  <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-px bg-gradient-to-r from-white to-white z-0" />
                 )}
               </motion.div>
             ))}

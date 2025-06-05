@@ -43,10 +43,10 @@ const BackToTopButton: React.FC<BackToTopButtonProps> = ({
             damping: 20
           }}
           onClick={scrollToTopSmooth}
-          className={`fixed bottom-8 right-8 z-50 p-4 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group ${className}`}
+          className={`fixed bottom-8 right-8 z-50 p-4 bg-gradient-to-r from-white to-white hover:from-white hover:to-white text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group ${className}`}
           whileHover={{ 
             scale: 1.1,
-            boxShadow: '0 10px 30px rgba(212, 175, 55, 0.4)'
+            boxShadow: '0 10px 30px rgba(255, 255, 255, 0.4)'
           }}
           whileTap={{ scale: 0.9 }}
           aria-label="Back to top"
@@ -80,3 +80,4 @@ const BackToTopButton: React.FC<BackToTopButtonProps> = ({
 };
 
 export default BackToTopButton; 
+

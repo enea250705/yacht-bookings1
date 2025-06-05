@@ -54,7 +54,7 @@ const Gallery: React.FC = () => {
     <section id="gallery" className="section bg-hotel-light-gray">
       <div className="container-custom">
         <h2 className="section-title text-center">
-          <span className="gold-underline">Hotel</span> Gallery
+          <span className="white-underline">Hotel</span> Gallery
         </h2>
         <p className="section-subtitle text-center">
           Explore our hotel through our carefully curated collection of images.
@@ -114,3 +114,4 @@ const Gallery: React.FC = () => {
 };
 
 export default Gallery;
+

@@ -28,9 +28,9 @@ const RentalComingSoon: React.FC = () => {
         className="absolute inset-0"
         animate={{
           background: [
-            'linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)',
-            'linear-gradient(225deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)',
-            'linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)'
+            'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+            'linear-gradient(225deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+            'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)'
           ]
         }}
         transition={{
@@ -44,13 +44,13 @@ const RentalComingSoon: React.FC = () => {
       {/* Premium Background Effects */}
       <div className="absolute inset-0">
         {/* Animated gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 via-transparent to-gold-600/10 animate-pulse" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-white/10 animate-pulse" />
         
         {/* Floating geometric shapes */}
         {[...Array(6)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-gold-400/30 rounded-full"
+            className="absolute w-2 h-2 bg-white/40/30 rounded-full"
             style={{
               left: `${15 + i * 15}%`,
               top: `${20 + i * 10}%`,
@@ -72,7 +72,7 @@ const RentalComingSoon: React.FC = () => {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={`particle-${i}`}
-            className="absolute w-1 h-1 bg-gold-400/40 rounded-full"
+            className="absolute w-1 h-1 bg-white/40/40 rounded-full"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -151,13 +151,13 @@ const RentalComingSoon: React.FC = () => {
           <motion.div variants={fadeInUp} className="text-center mb-20">
             {/* Luxury Status Badge */}
             <motion.div 
-              className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-gold-500/20 to-gold-600/20 backdrop-blur-xl border border-gold-400/30 mb-8"
+              className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-white/20 to-white/20 backdrop-blur-xl border border-white/40/30 mb-8"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Diamond size={18} className="mr-3 text-gold-400" />
-              <span className="text-gold-400 font-medium tracking-wide">Exclusive Development</span>
-              <Sparkles size={18} className="ml-3 text-gold-400" />
+              <Diamond size={18} className="mr-3 text-white" />
+              <span className="text-white font-medium tracking-wide">Exclusive Development</span>
+              <Sparkles size={18} className="ml-3 text-white" />
             </motion.div>
             
             {/* Main Title with Enhanced Typography */}
@@ -165,17 +165,17 @@ const RentalComingSoon: React.FC = () => {
               className="text-5xl md:text-7xl font-playfair mb-8 relative"
               variants={fadeInUp}
             >
-              <span className="bg-gradient-to-r from-white via-gold-200 to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
                 Luxury Yacht
               </span>
               <br />
-              <span className="bg-gradient-to-r from-gold-400 via-gold-300 to-gold-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
                 Charters
               </span>
               
               {/* Decorative underline */}
               <motion.div 
-                className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"
+                className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-white to-transparent"
                 initial={{ width: 0 }}
                 animate={{ width: "80%" }}
                 transition={{ duration: 2, delay: 1 }}
@@ -188,7 +188,7 @@ const RentalComingSoon: React.FC = () => {
               variants={fadeInUp}
             >
               We're crafting an unparalleled luxury charter experience that will redefine maritime excellence. 
-              <span className="text-gold-400 font-medium"> Prepare for something extraordinary.</span>
+              <span className="text-white font-medium"> Prepare for something extraordinary.</span>
             </motion.p>
           </motion.div>
           
@@ -204,13 +204,13 @@ const RentalComingSoon: React.FC = () => {
               whileHover={{ y: -10 }}
               transition={{ type: "spring", stiffness: 300 }}
               >
-              <div className="relative p-10 bg-gradient-to-br from-navy-800/60 to-navy-900/80 backdrop-blur-2xl rounded-3xl border border-gold-400/20 hover:border-gold-400/40 transition-all duration-500 overflow-hidden">
+              <div className="relative p-10 bg-gradient-to-br from-navy-800/60 to-navy-900/80 backdrop-blur-2xl rounded-3xl border border-white/40/20 hover:border-white/40/40 transition-all duration-500 overflow-hidden">
                 {/* Card background effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-gold-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 {/* Floating crown icon */}
                 <motion.div
-                  className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl flex items-center justify-center"
+                  className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-white to-white rounded-2xl flex items-center justify-center"
                   animate={{ rotate: [0, 5, 0] }}
                   transition={{ duration: 4, repeat: Infinity }}
                 >
@@ -241,7 +241,7 @@ const RentalComingSoon: React.FC = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.2 }}
                       >
-                        <div className="w-2 h-2 bg-gold-400 rounded-full" />
+                        <div className="w-2 h-2 bg-white/40 rounded-full" />
                         <span className="text-gray-300">{feature}</span>
               </motion.div>
             ))}
@@ -257,15 +257,15 @@ const RentalComingSoon: React.FC = () => {
             className="text-center"
           >
             <motion.div 
-              className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-gold-500/20 to-gold-600/20 backdrop-blur-xl rounded-full border border-gold-400/30"
+              className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-white/20 to-white/20 backdrop-blur-xl rounded-full border border-white/40/30"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Waves className="w-6 h-6 text-gold-400" />
-              <span className="text-gold-400 font-medium text-lg tracking-wide">
+              <Waves className="w-6 h-6 text-white" />
+              <span className="text-white font-medium text-lg tracking-wide">
                 Luxury Awaits on the Horizon
               </span>
-              <Sparkles className="w-6 h-6 text-gold-400" />
+              <Sparkles className="w-6 h-6 text-white" />
             </motion.div>
           </motion.div>
         </motion.div>
@@ -275,3 +275,4 @@ const RentalComingSoon: React.FC = () => {
 };
 
 export default RentalComingSoon; 
+

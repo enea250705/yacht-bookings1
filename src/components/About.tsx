@@ -102,7 +102,7 @@ const About: React.FC = () => {
       number: "50+",
       label: "Awards Won",
       description: "International maritime excellence",
-      color: "from-gold-400 to-gold-600"
+      color: "from-white to-white"
     },
     {
       icon: <Crown className="w-8 h-8" />,
@@ -137,7 +137,7 @@ const About: React.FC = () => {
           className="absolute inset-0 opacity-5"
           style={{ y, rotate }}
         >
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-white to-white rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-navy-400 to-navy-600 rounded-full blur-3xl" />
           <div className="absolute top-3/4 left-3/4 w-64 h-64 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full blur-2xl" />
         </motion.div>
@@ -157,7 +157,7 @@ const About: React.FC = () => {
             }}
             >
       <motion.div
-                className="w-2 h-2 bg-gold-300/20 rounded-full"
+                className="w-2 h-2 bg-white/30/20 rounded-full"
         animate={{
                   y: [-20, 20, -20],
                   opacity: [0.2, 0.5, 0.2],
@@ -178,9 +178,9 @@ const About: React.FC = () => {
           className="absolute inset-0 opacity-5"
           animate={{ 
             backgroundImage: [
-              'repeating-linear-gradient(45deg, rgba(212,175,55,0.1) 0px, transparent 1px, transparent 10px, rgba(212,175,55,0.1) 11px)',
-              'repeating-linear-gradient(135deg, rgba(212,175,55,0.1) 0px, transparent 1px, transparent 10px, rgba(212,175,55,0.1) 11px)',
-              'repeating-linear-gradient(45deg, rgba(212,175,55,0.1) 0px, transparent 1px, transparent 10px, rgba(212,175,55,0.1) 11px)'
+              'repeating-linear-gradient(45deg, rgba(255, 255, 255,0.1) 0px, transparent 1px, transparent 10px, rgba(255, 255, 255,0.1) 11px)',
+              'repeating-linear-gradient(135deg, rgba(255, 255, 255,0.1) 0px, transparent 1px, transparent 10px, rgba(255, 255, 255,0.1) 11px)',
+              'repeating-linear-gradient(45deg, rgba(255, 255, 255,0.1) 0px, transparent 1px, transparent 10px, rgba(255, 255, 255,0.1) 11px)'
             ]
           }}
           transition={{
@@ -195,17 +195,17 @@ const About: React.FC = () => {
         
         {/* Enhanced Section Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-gold-500/10 to-gold-600/10 border border-gold-400/30 rounded-full mb-6 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-white/10 to-white/10 border border-white/40/30 rounded-full mb-6 backdrop-blur-sm">
             <div>
-              <Anchor className="w-5 h-5 text-gold-600" />
+              <Anchor className="w-5 h-5 text-white" />
             </div>
-            <span className="text-gold-700 font-medium tracking-wider uppercase text-sm">About Excellence</span>
-            <Sparkles className="w-4 h-4 text-gold-500" />
+            <span className="text-white font-medium tracking-wider uppercase text-sm">About Excellence</span>
+            <Sparkles className="w-4 h-4 text-white" />
           </div>
           
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight">
             <span className="block">Crafting Maritime</span>
-            <span className="block bg-gradient-to-r from-gold-600 to-gold-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-white to-white bg-clip-text text-transparent">
               Masterpieces
             </span>
           </h2>
@@ -260,3 +260,5 @@ const About: React.FC = () => {
 };
 
 export default About;
+
+

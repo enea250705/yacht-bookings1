@@ -81,7 +81,7 @@ const FeaturedYachts: React.FC = () => {
               delay: i * 1.5
             }}
           >
-            <Sparkles className="h-2 w-2 text-gold-400/30" />
+            <Sparkles className="h-2 w-2 text-white/30" />
           </motion.div>
         ))}
       </div>
@@ -96,15 +96,15 @@ const FeaturedYachts: React.FC = () => {
             className="text-center mb-12"
           >
             <motion.span 
-              className="inline-block px-6 py-3 bg-gradient-to-r from-gold-500/20 to-gold-400/20 backdrop-blur-sm border border-gold-300/30 text-gold-700 dark:text-gold-300 rounded-full text-sm font-medium mb-8 relative overflow-hidden"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-white/20 to-white/20 backdrop-blur-sm border border-white/30/30 text-white dark:text-white rounded-full text-sm font-medium mb-8 relative overflow-hidden"
               whileHover={{ 
                 scale: 1.05,
-                borderColor: "rgba(212, 175, 55, 0.5)"
+                borderColor: "rgba(255, 255, 255, 0.5)"
               }}
               transition={{ duration: 0.3 }}
             >
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-gold-400/20 to-transparent"
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
                 animate={{
                   x: ['-100%', '100%'],
                   opacity: [0, 1, 0],
@@ -139,12 +139,12 @@ const FeaturedYachts: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                 transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 style={{ transformOrigin: 'center bottom' }}
-                className="inline-block text-gold-600 dark:text-gold-400"
+                className="inline-block text-white dark:text-white"
               >
                 a Sustainable Vision
               </motion.span>
               <motion.span 
-                className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-gold-500 to-gold-400 dark:from-gold-400 dark:to-gold-600"
+                className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-white to-white dark:from-white dark:to-white"
                 initial={{ width: 0, opacity: 0 }}
                 whileInView={{ width: "100%", opacity: 1 }}
                 viewport={{ once: true }}
@@ -182,7 +182,7 @@ const FeaturedYachts: React.FC = () => {
               
               {/* Luxury overlay on hover */}
               <motion.div 
-                className="absolute inset-0 bg-gradient-to-br from-gold-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 initial={{ scale: 1.2, opacity: 0 }}
                 whileHover={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -208,7 +208,7 @@ const FeaturedYachts: React.FC = () => {
               
               {/* Luxury overlay on hover */}
               <motion.div 
-                className="absolute inset-0 bg-gradient-to-br from-gold-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 initial={{ scale: 1.2, opacity: 0 }}
                 whileHover={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -230,7 +230,7 @@ const FeaturedYachts: React.FC = () => {
             <div className="text-sm text-gray-500 dark:text-gray-400 mb-2 tracking-wide uppercase">
               Exclusive Locations
             </div>
-            <div className="text-lg font-light text-navy-900 dark:text-gold-400 tracking-wider">
+            <div className="text-lg font-light text-navy-900 dark:text-white tracking-wider">
               Tirana • Monaco • Cannes • Portofino
             </div>
           </motion.div>
@@ -242,3 +242,4 @@ const FeaturedYachts: React.FC = () => {
 
 export default FeaturedYachts; 
  
+

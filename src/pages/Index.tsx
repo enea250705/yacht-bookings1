@@ -97,15 +97,15 @@ const Index: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 3 }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/20 via-transparent to-gold-900/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/20 via-transparent to-white/10" />
         <motion.div
           className="absolute inset-0 opacity-30"
           animate={{
             background: [
-              'radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 40% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%)'
+              'radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)'
             ]
           }}
           transition={{
@@ -197,3 +197,4 @@ const Index: React.FC = () => {
 };
 
 export default Index;
+

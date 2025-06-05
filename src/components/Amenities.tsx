@@ -10,7 +10,7 @@ interface AmenityProps {
 const AmenityCard: React.FC<AmenityProps> = ({ icon, title, description }) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <div className="text-hotel-gold mb-4">
+      <div className="text-white mb-4">
         <div className="inline-flex items-center justify-center w-12 h-12 bg-hotel-light-gray rounded-full">
           {icon}
         </div>
@@ -59,7 +59,7 @@ const Amenities: React.FC = () => {
     <section id="amenities" className="section bg-white">
       <div className="container-custom">
         <h2 className="section-title text-center">
-          <span className="gold-underline">Hotel</span> Amenities
+          <span className="white-underline">Hotel</span> Amenities
         </h2>
         <p className="section-subtitle text-center">
           Discover our wide range of premium services and facilities designed to make your stay exceptional.
@@ -85,25 +85,25 @@ const Amenities: React.FC = () => {
               </p>
               <ul className="space-y-2 mb-8">
                 <li className="flex items-center text-white">
-                  <svg className="w-5 h-5 text-hotel-gold mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-white mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   Priority Check-in and Late Check-Out
                 </li>
                 <li className="flex items-center text-white">
-                  <svg className="w-5 h-5 text-hotel-gold mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-white mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   Complimentary Breakfast and Dinner
                 </li>
                 <li className="flex items-center text-white">
-                  <svg className="w-5 h-5 text-hotel-gold mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-white mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   Daily Spa Treatment
                 </li>
                 <li className="flex items-center text-white">
-                  <svg className="w-5 h-5 text-hotel-gold mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-white mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   Personal Concierge Service
@@ -126,3 +126,4 @@ const Amenities: React.FC = () => {
 };
 
 export default Amenities;
+

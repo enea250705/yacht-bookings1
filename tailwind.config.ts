@@ -62,24 +62,24 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				hotel: {
-					'navy': '#0A2342',
-					'gold': '#CFB53B',
-					'light-gray': '#F5F5F5',
-					'mid-gray': '#E0E0E0',
-					
-					// Luxury theme colors
-					'dark': '#0F172A',
-					'blue': '#1E3A8A',
-					'royal': '#3B82F6',
-					'platinum': '#E5E7EB',
-					'silver': '#94A3B8',
-					'gold-light': '#F7DF94',
-					'gold-dark': '#BE9B41',
-					'accent-teal': '#0D9488',
-					'accent-emerald': '#059669',
-					'accent-purple': '#7C3AED',
-				},
+							hotel: {
+				'navy': '#0A2342',
+				'gold': '#FFFFFF',
+				'light-gray': '#F5F5F5',
+				'mid-gray': '#E0E0E0',
+				
+				// Luxury theme colors
+				'dark': '#0F172A',
+				'blue': '#1E3A8A',
+				'royal': '#3B82F6',
+				'platinum': '#E5E7EB',
+				'silver': '#94A3B8',
+				'gold-light': '#FFFFFF',
+				'gold-dark': '#F8F9FA',
+				'accent-teal': '#0D9488',
+				'accent-emerald': '#059669',
+				'accent-purple': '#7C3AED',
+			},
 				navy: {
 					'600': '#1a365d',
 					'700': '#0F2A4A',
@@ -87,12 +87,12 @@ export default {
 					'900': '#061830',
 					'950': '#020D1A'
 				},
-				gold: {
-					'300': '#F7DF94',
-					'400': '#E9D16D',
-					'500': '#CFB53B',
-					'600': '#BE9B41'
-				}
+							gold: {
+				'300': '#FFFFFF',
+				'400': '#FFFFFF',
+				'500': '#FFFFFF',
+				'600': '#F8F9FA'
+			}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

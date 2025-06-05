@@ -123,10 +123,10 @@ const Hero: React.FC = () => {
     <div className="relative h-screen min-h-[800px] w-full overflow-hidden pt-20 md:pt-0">
       {/* Floating sparkles */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(12)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute text-gold-400/30"
+                  {[...Array(12)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute text-white/30"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -144,7 +144,7 @@ const Hero: React.FC = () => {
       <motion.div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(212, 175, 55, 0.15) 0%, transparent 50%)'
+          background: 'radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.15) 0%, transparent 50%)'
         }}
         animate={{
           '--mouse-x': `${mousePosition.x / window.innerWidth * 100}%`,
@@ -175,9 +175,9 @@ const Hero: React.FC = () => {
           className="absolute inset-0"
           animate={{
             background: [
-              'linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%, rgba(212, 175, 55, 0.05) 100%)',
-              'linear-gradient(225deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%, rgba(212, 175, 55, 0.05) 100%)',
-              'linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%, rgba(212, 175, 55, 0.05) 100%)'
+              'linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%, rgba(255, 255, 255, 0.05) 100%)',
+              'linear-gradient(225deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%, rgba(255, 255, 255, 0.05) 100%)',
+              'linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%, rgba(255, 255, 255, 0.05) 100%)'
             ]
           }}
           transition={{
@@ -202,11 +202,11 @@ const Hero: React.FC = () => {
             className="relative inline-block mb-4 sm:mb-8"
           >
             <motion.span 
-              className="px-4 sm:px-6 py-1.5 sm:py-2 bg-gradient-to-r from-gold-600/80 to-gold-400/80 backdrop-blur-md rounded-full text-xs sm:text-sm uppercase tracking-wider inline-block font-medium text-navy-950 shadow-[0_5px_15px_rgba(212,175,55,0.3)] border border-gold-300/20"
+              className="px-4 sm:px-6 py-1.5 sm:py-2 bg-gradient-to-r from-white/80 to-white/80 backdrop-blur-md rounded-full text-xs sm:text-sm uppercase tracking-wider inline-block font-medium text-navy-950 shadow-[0_5px_15px_rgba(255,255,255,0.3)] border border-white/20"
               whileHover={{ 
                 scale: 1.05,
-                boxShadow: '0 8px 25px rgba(212,175,55,0.4)',
-                borderColor: 'rgba(212, 175, 55, 0.5)'
+                boxShadow: '0 8px 25px rgba(255,255,255,0.4)',
+                borderColor: 'rgba(255, 255, 255, 0.5)'
               }}
               transition={{ duration: 0.3 }}
             >
@@ -245,7 +245,7 @@ const Hero: React.FC = () => {
               />
             </motion.div>
             <motion.div 
-              className="absolute -bottom-2 sm:-bottom-4 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"
+              className="absolute -bottom-2 sm:-bottom-4 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-white to-transparent"
               initial={{ width: 0, opacity: 0, scaleX: 0 }}
               animate={{ width: 160, opacity: 1, scaleX: 1 }}
               transition={{ delay: 1.2, duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
@@ -270,7 +270,7 @@ const Hero: React.FC = () => {
               className="relative group"
             >
               <Link to="/collection" className="inline-block">
-                <Button className="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-navy-950 px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium relative overflow-hidden group">
+                <Button className="bg-gradient-to-r from-white to-white hover:from-gray-100 hover:to-gray-50 text-navy-950 px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium relative overflow-hidden group">
                   <span className="flex items-center gap-2 relative z-10">
                     <motion.div
                       animate={{ rotate: [0, 12, 0] }}
@@ -278,10 +278,10 @@ const Hero: React.FC = () => {
                     >
                     <Anchor className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:rotate-12 duration-300" />
                     </motion.div>
-                    <span>Explore Collection</span>
+                    <span>RY Yachts</span>
                   </span>
                   <motion.span 
-                    className="absolute inset-0 bg-gradient-to-r from-gold-400/0 via-white/20 to-gold-400/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"
+                    className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"
                     animate={{
                       x: ['-100%', '100%'],
                     }}
@@ -301,7 +301,7 @@ const Hero: React.FC = () => {
               className="relative group"
             >
               <Link to="/rental" className="inline-block">
-                <Button className="bg-gradient-to-r from-navy-800 to-navy-700 hover:from-navy-700 hover:to-navy-600 text-white border border-gold-400/30 hover:border-gold-400/60 px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium relative overflow-hidden group">
+                <Button className="bg-gradient-to-r from-navy-800 to-navy-700 hover:from-navy-700 hover:to-navy-600 text-white border border-white/30 hover:border-white/60 px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium relative overflow-hidden group">
                   <span className="flex items-center gap-2 relative z-10">
                     <motion.div
                       animate={{ rotate: [0, -12, 0] }}
@@ -312,7 +312,7 @@ const Hero: React.FC = () => {
                     <span>Class Rental</span>
                   </span>
                   <motion.span 
-                    className="absolute inset-0 bg-gradient-to-r from-gold-400/0 via-gold-400/10 to-gold-400/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"
+                    className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"
                     animate={{
                       x: ['-100%', '100%'],
                     }}
@@ -346,22 +346,22 @@ const Hero: React.FC = () => {
                     damping: 20,
                     stiffness: 100
                   }}
-                  whileHover={{ 
-                    scale: 1.05, 
-                    y: -5,
-                    boxShadow: '0 10px 30px rgba(212,175,55,0.2)',
-                    borderColor: 'rgba(212, 175, 55, 0.4)'
-                  }}
+                              whileHover={{ 
+              scale: 1.05, 
+              y: -5,
+              boxShadow: '0 10px 30px rgba(255,255,255,0.2)',
+              borderColor: 'rgba(255, 255, 255, 0.4)'
+            }}
                   className="bg-navy-900/50 backdrop-blur-sm border border-white/10 rounded-lg p-3 sm:p-4 flex flex-col items-center cursor-pointer transition-all duration-300"
                 >
                   <motion.div 
-                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gold-500/20 flex items-center justify-center mb-2 sm:mb-3"
+                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center mb-2 sm:mb-3"
                     whileHover={{ rotate: 360, scale: 1.1 }}
                     transition={{ duration: 0.6 }}
                   >
                     {spec.icon}
                   </motion.div>
-                  <h4 className="text-gold-400 text-xs sm:text-sm font-medium mb-1">{spec.label}</h4>
+                  <h4 className="text-white text-xs sm:text-sm font-medium mb-1">{spec.label}</h4>
                   <p className="text-white/80 text-[10px] sm:text-xs text-center">{spec.value}</p>
                 </motion.div>
               ))}
@@ -380,16 +380,16 @@ const Hero: React.FC = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 border-2 border-gold-400/50 rounded-full flex justify-center"
+          className="w-6 h-10 border-2 border-white/40/50 rounded-full flex justify-center"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-1 h-3 bg-gold-400 rounded-full mt-2"
+            className="w-1 h-3 bg-white/40 rounded-full mt-2"
           />
         </motion.div>
         <motion.p
-          className="text-gold-400/70 text-xs mt-2 hidden sm:block"
+          className="text-white/70 text-xs mt-2 hidden sm:block"
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
@@ -416,4 +416,5 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
 

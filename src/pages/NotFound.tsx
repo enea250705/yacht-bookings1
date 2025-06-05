@@ -85,13 +85,13 @@ const NotFound: React.FC = () => {
       {/* Premium Background Effects */}
       <div className="absolute inset-0">
         {/* Animated gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gold-500/10 via-transparent to-gold-600/15 animate-pulse" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/15 animate-pulse" />
         
         {/* Premium particle system */}
         {[...Array(25)].map((_, i) => (
           <motion.div
             key={`particle-${i}`}
-            className="absolute w-1 h-1 bg-gold-400/50 rounded-full"
+            className="absolute w-1 h-1 bg-white/40/50 rounded-full"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -106,7 +106,7 @@ const NotFound: React.FC = () => {
         {[...Array(8)].map((_, i) => (
           <motion.div
             key={`shape-${i}`}
-            className="absolute w-3 h-3 bg-gold-400/20 rounded-full"
+            className="absolute w-3 h-3 bg-white/40/20 rounded-full"
             style={{
               left: `${10 + i * 12}%`,
               top: `${15 + i * 8}%`,
@@ -167,7 +167,7 @@ const NotFound: React.FC = () => {
               ease: "easeInOut"
             }}
           >
-            <div className="w-16 h-16 bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl flex items-center justify-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-white to-white rounded-2xl flex items-center justify-center">
               <Crown className="w-8 h-8 text-white" />
             </div>
           </motion.div>
@@ -175,11 +175,11 @@ const NotFound: React.FC = () => {
           {/* Luxury 404 Typography */}
           <motion.div className="relative">
             <h1 className="text-8xl md:text-9xl font-playfair mb-4 relative">
-              <span className="bg-gradient-to-r from-gold-400 via-gold-300 to-gold-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
                 4
               </span>
               <span className="relative mx-4">
-                <span className="bg-gradient-to-r from-white via-gold-200 to-white bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
                   0
                 </span>
                 {/* Compass in the center of 0 */}
@@ -188,17 +188,17 @@ const NotFound: React.FC = () => {
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 >
-                  <Compass className="w-16 h-16 text-gold-400" />
+                  <Compass className="w-16 h-16 text-white" />
                 </motion.div>
               </span>
-              <span className="bg-gradient-to-r from-gold-400 via-gold-300 to-gold-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
                 4
               </span>
             </h1>
             
             {/* Decorative underline */}
             <motion.div 
-              className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"
+              className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-white to-transparent"
               initial={{ width: 0 }}
               animate={{ width: "60%" }}
               transition={{ duration: 2, delay: 1 }}
@@ -209,18 +209,18 @@ const NotFound: React.FC = () => {
         {/* Premium Content Card */}
         <motion.div 
           variants={premiumReveal}
-          className="relative p-10 bg-gradient-to-br from-navy-800/60 to-navy-900/80 backdrop-blur-2xl rounded-3xl border border-gold-400/20 mb-12 overflow-hidden group"
+          className="relative p-10 bg-gradient-to-br from-navy-800/60 to-navy-900/80 backdrop-blur-2xl rounded-3xl border border-white/40/20 mb-12 overflow-hidden group"
         >
           {/* Card background effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-gold-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           
           {/* Floating anchor decoration */}
           <motion.div 
-            className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-gold-500/20 to-gold-600/30 rounded-2xl flex items-center justify-center"
+            className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-white/20 to-white/30 rounded-2xl flex items-center justify-center"
             animate={{ rotate: [0, 15, -15, 0] }}
             transition={{ duration: 6, repeat: Infinity }}
           >
-            <Anchor className="w-6 h-6 text-gold-400" />
+            <Anchor className="w-6 h-6 text-white" />
           </motion.div>
 
           <div className="relative z-10">
@@ -247,8 +247,8 @@ const NotFound: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.2 + 1 }}
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-gold-500/20 to-gold-600/30 rounded-xl flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-gold-400" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-white/20 to-white/30 rounded-xl flex items-center justify-center">
+                    <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <span className="text-sm text-gray-400">{item.label}</span>
                 </motion.div>
@@ -270,7 +270,7 @@ const NotFound: React.FC = () => {
             <Button
               onClick={() => window.history.back()}
               variant="outline"
-              className="bg-transparent border-2 border-gold-400/50 text-gold-400 hover:bg-gold-400/10 hover:border-gold-400 px-8 py-4 text-lg font-medium backdrop-blur-sm"
+              className="bg-transparent border-2 border-white/50 text-white hover:bg-navy-900/10 hover:border-white/40 px-8 py-4 text-lg font-medium backdrop-blur-sm"
             >
               <ArrowLeft className="mr-3 h-5 w-5" />
               Navigate Back
@@ -283,7 +283,7 @@ const NotFound: React.FC = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <Link to="/">
-              <Button className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 text-lg font-medium shadow-xl hover:shadow-2xl transition-all duration-300">
+              <Button className="bg-gradient-to-r from-white to-white hover:from-white hover:to-white text-white px-8 py-4 text-lg font-medium shadow-xl hover:shadow-2xl transition-all duration-300">
                 <Home className="mr-3 h-5 w-5" />
                 Return to Fleet
                 <Sparkles className="ml-3 h-5 w-5" />
@@ -298,13 +298,13 @@ const NotFound: React.FC = () => {
           className="mt-12"
         >
           <motion.div 
-            className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-gold-500/20 to-gold-600/20 backdrop-blur-xl rounded-full border border-gold-400/30"
+            className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-white/20 to-white/20 backdrop-blur-xl rounded-full border border-white/40/30"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Star className="w-5 h-5 text-gold-400 fill-current" />
-            <span className="text-gold-400 font-medium">Premium Navigation Experience</span>
-            <Star className="w-5 h-5 text-gold-400 fill-current" />
+            <Star className="w-5 h-5 text-white fill-current" />
+            <span className="text-white font-medium">Premium Navigation Experience</span>
+            <Star className="w-5 h-5 text-white fill-current" />
           </motion.div>
         </motion.div>
       </motion.div>
@@ -313,3 +313,4 @@ const NotFound: React.FC = () => {
 };
 
 export default NotFound;
+

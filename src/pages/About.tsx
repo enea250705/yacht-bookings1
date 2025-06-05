@@ -46,7 +46,7 @@ const magneticHover = {
     y: -15,
     scale: 1.03,
     rotateY: 5,
-    boxShadow: "0 30px 60px rgba(212, 175, 55, 0.3)",
+    boxShadow: "0 30px 60px rgba(255, 255, 255, 0.3)",
     transition: {
       duration: 0.4,
       ease: [0.25, 0.1, 0.25, 1]
@@ -117,19 +117,19 @@ const About: React.FC = () => {
 
   const values = [
     {
-      icon: <Star className="w-8 h-8 text-gold-400" />,
+      icon: <Star className="w-8 h-8 text-white" />,
       title: 'Excellence',
       description: 'We maintain the highest standards in every aspect of our business, from vessel selection to client service.',
-      gradient: 'from-gold-500/20 to-gold-600/20'
+      gradient: 'from-white/20 to-white/20'
     },
     {
-      icon: <ShieldCheck className="w-8 h-8 text-gold-400" />,
+      icon: <ShieldCheck className="w-8 h-8 text-white" />,
       title: 'Integrity',
       description: 'Honesty and transparency guide all our interactions, building lasting trust with our clients.',
       gradient: 'from-blue-500/20 to-blue-600/20'
     },
     {
-      icon: <Settings className="w-8 h-8 text-gold-400" />,
+      icon: <Settings className="w-8 h-8 text-white" />,
       title: 'Innovation',
       description: 'We constantly seek new technologies and designs that push the boundaries of yacht craftsmanship.',
       gradient: 'from-emerald-500/20 to-emerald-600/20'
@@ -138,28 +138,28 @@ const About: React.FC = () => {
 
   const expertiseAreas = [
     {
-      icon: <Anchor className="w-8 h-8 text-gold-400" />,
+      icon: <Anchor className="w-8 h-8 text-white" />,
       title: "Yacht Sales",
       description: "Expert guidance in selecting the perfect vessel that aligns with your vision and requirements.",
       link: "/collection",
       stats: "50+ Premium Vessels"
     },
     {
-      icon: <Compass className="w-8 h-8 text-gold-400" />,
+      icon: <Compass className="w-8 h-8 text-white" />,
       title: "Charter Services",
       description: "Curated luxury yacht charter experiences in the world's most prestigious destinations.",
       link: "/rental",
       stats: "25+ Destinations"
     },
     {
-      icon: <Briefcase className="w-8 h-8 text-gold-400" />,
+      icon: <Briefcase className="w-8 h-8 text-white" />,
       title: "Management & Maintenance",
       description: "Comprehensive yacht management services ensuring your vessel remains in pristine condition.",
       link: "/services",
       stats: "24/7 Support"
     },
     {
-      icon: <Users className="w-8 h-8 text-gold-400" />,
+      icon: <Users className="w-8 h-8 text-white" />,
       title: "Personal Consultation",
       description: "Tailored advice from industry experts on all aspects of yacht ownership and investment.",
       link: "/contact",
@@ -186,7 +186,7 @@ const About: React.FC = () => {
             animate="animate"
             transition={{ delay: i * 0.8 }}
           >
-            <Gem className="h-4 w-4 text-gold-400/20" />
+            <Gem className="h-4 w-4 text-white/20" />
           </motion.div>
         ))}
       </div>
@@ -195,7 +195,7 @@ const About: React.FC = () => {
       <motion.div
         className="fixed inset-0 pointer-events-none z-10"
         style={{
-          background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(212, 175, 55, 0.08), transparent 50%)`
+          background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.08), transparent 50%)`
         }}
         animate={{
           opacity: [0.3, 0.6, 0.3]
@@ -238,9 +238,9 @@ const About: React.FC = () => {
           className="absolute inset-0"
           animate={{
             background: [
-              'linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)',
-              'linear-gradient(225deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)',
-              'linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)'
+              'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+              'linear-gradient(225deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+              'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)'
             ]
           }}
           transition={{
@@ -264,11 +264,11 @@ const About: React.FC = () => {
               className="relative inline-block mb-8"
             >
               <motion.span 
-                className="px-6 py-3 bg-gradient-to-r from-gold-600/80 to-gold-400/80 backdrop-blur-md rounded-full text-sm uppercase tracking-wider inline-block font-medium text-navy-950 shadow-[0_5px_15px_rgba(212,175,55,0.3)] border border-gold-300/20"
+                className="px-6 py-3 bg-gradient-to-r from-white/80 to-white/80 backdrop-blur-md rounded-full text-sm uppercase tracking-wider inline-block font-medium text-navy-950 shadow-[0_5px_15px_rgba(255, 255, 255,0.3)] border border-white/30/20"
                 whileHover={{ 
                   scale: 1.05,
-                  boxShadow: '0 8px 25px rgba(212,175,55,0.4)',
-                  borderColor: 'rgba(212, 175, 55, 0.5)'
+                  boxShadow: '0 8px 25px rgba(255, 255, 255,0.4)',
+                  borderColor: 'rgba(255, 255, 255, 0.5)'
                 }}
               >
                 <Crown className="inline w-4 h-4 mr-2" />
@@ -287,7 +287,7 @@ const About: React.FC = () => {
                 <motion.span className="inline-block">Crafted With</motion.span>
                 <br />
                 <motion.span 
-                  className="inline-block text-gold-400"
+                  className="inline-block text-white"
                   initial={{ opacity: 0, y: 50, rotateX: 90 }}
                   animate={{ opacity: 1, y: 0, rotateX: 0 }}
                   transition={{ duration: 1.2, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -296,7 +296,7 @@ const About: React.FC = () => {
                   Excellence
                 </motion.span>
                 <motion.div 
-                  className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"
+                  className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-white to-transparent"
                   initial={{ width: 0, opacity: 0 }}
                   animate={{ width: 300, opacity: 1 }}
                   transition={{ delay: 1.2, duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
@@ -328,7 +328,7 @@ const About: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.5 + (index * 0.2), duration: 0.8 }}
                 >
-                  <div className="text-3xl md:text-4xl font-playfair text-gold-400 mb-2">{stat.number}</div>
+                  <div className="text-3xl md:text-4xl font-playfair text-white mb-2">{stat.number}</div>
                   <div className="text-white/70 text-sm">{stat.label}</div>
                 </motion.div>
               ))}
@@ -343,7 +343,7 @@ const About: React.FC = () => {
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ArrowRight className="w-8 h-8 text-gold-400 transform rotate-90 opacity-90" />
+          <ArrowRight className="w-8 h-8 text-white transform rotate-90 opacity-90" />
         </motion.div>
       </motion.div>
 
@@ -374,7 +374,7 @@ const About: React.FC = () => {
                   whileInView={{ width: '100%' }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="absolute -bottom-2 left-0 h-0.5 bg-gradient-to-r from-gold-400 via-gold-300 to-gold-500"
+                  className="absolute -bottom-2 left-0 h-0.5 bg-gradient-to-r from-white via-white to-white"
                 />
               </h2>
               <p className="text-lg text-white max-w-3xl mx-auto font-medium">
@@ -424,7 +424,7 @@ const About: React.FC = () => {
                 whileInView={{ width: '100%' }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="absolute -bottom-2 left-0 h-0.5 bg-gradient-to-r from-gold-400 via-gold-300 to-gold-500"
+                className="absolute -bottom-2 left-0 h-0.5 bg-gradient-to-r from-white via-white to-white"
               />
             </h2>
             <p className="text-lg text-white max-w-3xl mx-auto font-medium">
@@ -444,11 +444,11 @@ const About: React.FC = () => {
                 whileHover={{ y: -5, transition: { duration: 0.3 } }}
               >
                 <div className="flex items-start gap-6">
-                  <div className="bg-gradient-to-br from-navy-700 to-navy-800 rounded-full w-16 h-16 flex items-center justify-center shadow-[0_10px_20px_rgba(0,0,0,0.2)] group-hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all duration-500 border border-gold-500/20 group-hover:border-gold-400/50">
+                  <div className="bg-gradient-to-br from-navy-700 to-navy-800 rounded-full w-16 h-16 flex items-center justify-center shadow-[0_10px_20px_rgba(0,0,0,0.2)] group-hover:shadow-[0_0_30px_rgba(255, 255, 255,0.3)] transition-all duration-500 border border-white/50/20 group-hover:border-white/40/50">
                     {area.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-playfair text-white font-bold mb-3 group-hover:text-gold-400 transition-colors duration-300">{area.title}</h3>
+                    <h3 className="text-2xl font-playfair text-white font-bold mb-3 group-hover:text-white transition-colors duration-300">{area.title}</h3>
                     <p className="text-white/80 mb-4">{area.description}</p>
                   </div>
                 </div>
@@ -464,3 +464,4 @@ const About: React.FC = () => {
 };
 
 export default About; 
+

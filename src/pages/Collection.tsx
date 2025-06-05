@@ -56,7 +56,7 @@ const magneticHover = {
     y: -15,
     scale: 1.03,
     rotateY: 5,
-    boxShadow: "0 30px 60px rgba(212, 175, 55, 0.3)",
+    boxShadow: "0 30px 60px rgba(255, 255, 255, 0.3)",
     transition: {
       duration: 0.4,
       ease: [0.25, 0.1, 0.25, 1]
@@ -199,7 +199,7 @@ const Collection: React.FC = () => {
             animate="animate"
             transition={{ delay: i * 0.5 }}
           >
-            <Diamond className="h-3 w-3 text-gold-400/20" />
+            <Diamond className="h-3 w-3 text-white/20" />
           </motion.div>
         ))}
       </div>
@@ -208,7 +208,7 @@ const Collection: React.FC = () => {
       <motion.div
         className="fixed inset-0 pointer-events-none z-10"
         style={{
-          background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(212, 175, 55, 0.06), transparent 50%)`
+          background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.06), transparent 50%)`
         }}
         animate={{
           opacity: [0.3, 0.7, 0.3]
@@ -232,9 +232,9 @@ const Collection: React.FC = () => {
         {/* Luxury Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj48cGF0aCBkPSJNMCAyMGgyME0yMCAyMHYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-30"></div>
-          <div className="absolute top-20 left-20 w-40 h-40 bg-gold-400/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-32 h-32 bg-gold-400/15 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gold-400/5 rounded-full blur-2xl"></div>
+          <div className="absolute top-20 left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-32 h-32 bg-white/15 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-white/5 rounded-full blur-2xl"></div>
         </div>
 
         {/* Parallax background image - Enhanced visibility */}
@@ -259,9 +259,9 @@ const Collection: React.FC = () => {
           className="absolute inset-0"
           animate={{
             background: [
-              'linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)',
-              'linear-gradient(225deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)',
-              'linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(212, 175, 55, 0.1) 100%)'
+              'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+              'linear-gradient(225deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+              'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)'
             ]
           }}
           transition={{
@@ -285,11 +285,11 @@ const Collection: React.FC = () => {
               className="relative inline-block mb-6"
             >
               <motion.span 
-                className="px-6 py-3 bg-gradient-to-r from-gold-600/80 to-gold-400/80 backdrop-blur-md rounded-full text-sm uppercase tracking-wider inline-block font-medium text-navy-950 shadow-[0_5px_15px_rgba(212,175,55,0.3)] border border-gold-300/20"
+                className="px-6 py-3 bg-gradient-to-r from-white/80 to-white/80 backdrop-blur-md rounded-full text-sm uppercase tracking-wider inline-block font-medium text-navy-950 shadow-[0_5px_15px_rgba(255, 255, 255,0.3)] border border-white/20"
                 whileHover={{ 
                   scale: 1.05,
-                  boxShadow: '0 8px 25px rgba(212,175,55,0.4)',
-                  borderColor: 'rgba(212, 175, 55, 0.5)'
+                  boxShadow: '0 8px 25px rgba(255, 255, 255,0.4)',
+                  borderColor: 'rgba(255, 255, 255, 0.5)'
                 }}
               >
                 <Crown className="inline w-4 h-4 mr-2" />
@@ -303,7 +303,7 @@ const Collection: React.FC = () => {
               className="mb-6"
             >
               <motion.div
-                className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-gold-500/20 to-gold-600/20 backdrop-blur-sm border border-gold-400/30"
+                className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-white/20 to-white/20 backdrop-blur-sm border border-white/30"
                 animate={{ 
                   rotate: [0, 360],
                   scale: [1, 1.1, 1]
@@ -314,7 +314,7 @@ const Collection: React.FC = () => {
                   ease: "linear"
                 }}
               >
-                <Ship className="w-8 h-8 text-gold-400" />
+                <Ship className="w-8 h-8 text-white" />
               </motion.div>
             </motion.div>
             
@@ -333,7 +333,7 @@ const Collection: React.FC = () => {
               </motion.span>
               {" "}
               <motion.span 
-                className="inline-block text-gold-400"
+                className="inline-block text-white"
                 initial={{ y: 50, opacity: 0, rotateX: 90 }}
                 animate={{ y: 0, opacity: 1, rotateX: 0 }}
                 transition={{ duration: 1.2, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -342,7 +342,7 @@ const Collection: React.FC = () => {
                 Collection
               </motion.span>
               <motion.div 
-                className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"
+                className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-transparent via-white to-transparent"
                 initial={{ width: 0, opacity: 0 }}
                 animate={{ width: 250, opacity: 1 }}
                 transition={{ delay: 1.2, duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
@@ -373,7 +373,7 @@ const Collection: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.5 + (index * 0.2), duration: 0.8 }}
                 >
-                  <div className="text-2xl md:text-3xl font-playfair text-gold-400 mb-1">{stat.number}</div>
+                  <div className="text-2xl md:text-3xl font-playfair text-white mb-1">{stat.number}</div>
                   <div className="text-white/70 text-xs">{stat.label}</div>
                 </motion.div>
               ))}
@@ -391,12 +391,12 @@ const Collection: React.FC = () => {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-5 h-8 border-2 border-gold-400/50 rounded-full flex justify-center"
+            className="w-5 h-8 border-2 border-white/50 rounded-full flex justify-center"
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="w-1 h-2 bg-gold-400 rounded-full mt-1"
+              className="w-1 h-2 bg-white rounded-full mt-1"
             />
           </motion.div>
         </motion.div>
@@ -417,7 +417,7 @@ const Collection: React.FC = () => {
         {/* Premium accent lines */}
         <motion.div 
           className="absolute top-0 left-0 right-0 h-px opacity-30"
-          style={{ background: 'linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent)' }}
+          style={{ background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent)' }}
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 2, delay: 0.5 }}
@@ -429,10 +429,10 @@ const Collection: React.FC = () => {
             className="text-center mb-20"
           >
             <motion.span 
-              className="inline-block px-6 py-2 bg-gradient-to-r from-gold-500/20 to-gold-400/20 backdrop-blur-sm border border-gold-300/30 text-gold-300 rounded-full text-sm font-medium mb-6 relative overflow-hidden"
+              className="inline-block px-6 py-2 bg-gradient-to-r from-white/20 to-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full text-sm font-medium mb-6 relative overflow-hidden"
               whileHover={{ 
                 scale: 1.05,
-                borderColor: "rgba(212, 175, 55, 0.5)"
+                borderColor: "rgba(255, 255, 255, 0.5)"
               }}
             >
               <Crown className="inline w-4 h-4 mr-2" />
@@ -449,7 +449,7 @@ const Collection: React.FC = () => {
               <motion.span className="inline-block">Exclusive</motion.span>
               {" "}
               <motion.span 
-                className="inline-block text-gold-400"
+                className="inline-block text-white"
                 initial={{ opacity: 0, y: 50, rotateX: 90 }}
                 whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                 transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
@@ -458,7 +458,7 @@ const Collection: React.FC = () => {
                 Shipyards
               </motion.span>
               <motion.span 
-                className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600"
+                className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-white via-white to-white"
                 initial={{ width: 0, opacity: 0 }}
                 whileInView={{ width: "100%", opacity: 1 }}
                 viewport={{ once: true }}
@@ -492,11 +492,11 @@ const Collection: React.FC = () => {
               >
                 <Link to={`/shipyard/${shipyard.slug}`} className="block">
                   <motion.div 
-                    className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-navy-800/50 to-navy-900/80 backdrop-blur-md border border-navy-700/30 hover:border-gold-500/50 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_25px_50px_rgba(212,175,55,0.2)]"
+                    className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-navy-800/50 to-navy-900/80 backdrop-blur-md border border-navy-700/30 hover:border-white/50 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_25px_50px_rgba(255, 255, 255,0.2)]"
                   >
                     {/* Shimmer effect */}
                     <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-transparent via-gold-400/10 to-transparent transform skew-x-12"
+                      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform skew-x-12"
                       variants={shimmerAnimation}
                       animate="animate"
                     />
@@ -516,7 +516,7 @@ const Collection: React.FC = () => {
                       {/* Bottom overlay content */}
                       <div className="absolute bottom-0 left-0 right-0 p-6">
                         <h3 className="text-2xl font-playfair font-bold text-white mb-2">{shipyard.name}</h3>
-                        <div className="flex items-center text-gold-400 text-sm">
+                        <div className="flex items-center text-white text-sm">
                           <Award className="w-4 h-4 mr-2" />
                           <span>{shipyard.specialty}</span>
                         </div>
@@ -528,9 +528,9 @@ const Collection: React.FC = () => {
                       <p className="text-white/80 text-sm leading-relaxed mb-4 line-clamp-3">{shipyard.description}</p>
                       
                       <div className="flex items-center justify-between">
-                        <div className="text-gold-400 text-sm font-medium">Explore Models</div>
+                        <div className="text-white text-sm font-medium">Explore Models</div>
                         <motion.div 
-                          className="w-8 h-8 rounded-full flex items-center justify-center bg-gold-500/10 text-gold-400 group-hover:bg-gold-500/20 transition-all duration-300"
+                          className="w-8 h-8 rounded-full flex items-center justify-center bg-navy-900/20 text-white group-hover:bg-navy-900/30 transition-all duration-300"
                           whileHover={{ scale: 1.1, rotate: 360 }}
                           transition={{ duration: 0.3 }}
                         >
@@ -559,7 +559,7 @@ const Collection: React.FC = () => {
                   <Link to={`/shipyard/${shipyard.slug}`} className="block">
                     <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-navy-800/60 to-navy-900/80 backdrop-blur-md border border-navy-700/30 shadow-[0_15px_35px_rgba(0,0,0,0.4)]">
                       {/* Mobile shimmer */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gold-400/5 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
                       
                       <div className="relative h-48 overflow-hidden">
                         <img 
@@ -573,7 +573,7 @@ const Collection: React.FC = () => {
                         {/* Mobile specs overlay */}
                         <div className="absolute bottom-0 left-0 right-0 p-4">
                           <h3 className="text-xl font-playfair font-bold text-white mb-1">{shipyard.name}</h3>
-                          <div className="flex items-center text-gold-400 text-sm">
+                          <div className="flex items-center text-white text-sm">
                             <Star className="w-3.5 h-3.5 mr-1" />
                             <span>{shipyard.specialty}</span>
                           </div>
@@ -584,7 +584,7 @@ const Collection: React.FC = () => {
                         <p className="text-white/80 text-sm mb-4 leading-relaxed">{shipyard.description}</p>
                         
                         <div className="flex items-center justify-end">
-                          <div className="text-gold-400 flex items-center text-sm font-medium">
+                          <div className="text-white flex items-center text-sm font-medium">
                             <span className="mr-1">View Models</span>
                             <ArrowRight className="w-4 h-4" />
                           </div>
@@ -605,3 +605,5 @@ const Collection: React.FC = () => {
 };
 
 export default Collection; 
+
+

@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="section bg-white">
       <div className="container-custom">
         <h2 className="section-title text-center">
-          <span className="gold-underline">Contact</span> Us
+          <span className="white-underline">Contact</span> Us
         </h2>
         <p className="section-subtitle text-center">
           Have questions or ready to book? Reach out to our team for assistance.
@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
               <p className="mb-6 text-center">Our dedicated team is ready to assist you with any inquiries or special requests you may have.</p>
               
               <div className="flex items-center justify-center mb-4">
-                <Mail className="mr-3 text-hotel-gold" size={20} />
+                <Mail className="mr-3 text-white" size={20} />
                 <div>
                   <p className="font-medium">Email</p>
                   <p className="text-gray-300">class.av.yachts@gmail.com</p>
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
               <p className="text-gray-600 mb-6 text-center">Stay updated with our latest offers and news.</p>
               
               <div className="flex justify-center space-x-4">
-                <a href="#" className="bg-white p-3 rounded-full hover:bg-hotel-navy hover:text-white transition-colors">
+                <a href="#" className="bg-white p-3 rounded-full text-navy-900 hover:bg-hotel-navy hover:text-white transition-colors">
                   <Instagram size={20} />
                 </a>
               </div>
@@ -46,3 +46,4 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+

@@ -94,23 +94,23 @@
     @apply text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto;
   }
 
-  .gold-underline {
+  .white-underline {
     @apply relative inline-block;
     position: relative;
   }
   
-  .gold-underline::after {
+  .white-underline::after {
     content: '';
     position: absolute;
     width: 40%;
     height: 2px;
     bottom: -6px;
     left: 0;
-    background: linear-gradient(90deg, #D4AF37, #FFF5CC, #D4AF37);
+    background: linear-gradient(90deg, #FFFFFF, #F8F9FA, #FFFFFF);
     transition: width 0.4s ease;
   }
   
-  .section-title:hover .gold-underline::after {
+  .section-title:hover .white-underline::after {
     width: 100%;
   }
 

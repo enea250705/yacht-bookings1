@@ -49,7 +49,7 @@ const magneticHover = {
     scale: 1.02,
     y: -8,
     rotateY: 5,
-    boxShadow: "0 25px 50px rgba(212, 175, 55, 0.25)",
+    boxShadow: "0 25px 50px rgba(255, 255, 255, 0.25)",
     transition: {
       duration: 0.4,
       ease: [0.25, 0.1, 0.25, 1]
@@ -279,7 +279,7 @@ const YachtCollection: React.FC = () => {
             animate="animate"
             transition={{ delay: i * 2 }}
           >
-            <Sparkles className="h-2 w-2 text-gold-400/20" />
+            <Sparkles className="h-2 w-2 text-white/20" />
           </motion.div>
         ))}
       </div>
@@ -288,7 +288,7 @@ const YachtCollection: React.FC = () => {
       <motion.div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: `radial-gradient(1200px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(212, 175, 55, 0.03), transparent 50%)`
+          background: `radial-gradient(1200px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.03), transparent 50%)`
         }}
         animate={{
           opacity: [0.2, 0.4, 0.2]
@@ -303,14 +303,14 @@ const YachtCollection: React.FC = () => {
       {/* Premium accent lines */}
       <motion.div 
         className="absolute top-0 left-0 right-0 h-px opacity-30"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent)' }}
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         transition={{ duration: 2, delay: 0.5 }}
       />
       <motion.div 
         className="absolute bottom-0 left-0 right-0 h-px opacity-30"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent)' }}
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         transition={{ duration: 2, delay: 0.7 }}
@@ -319,7 +319,7 @@ const YachtCollection: React.FC = () => {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="mb-20">
           <div className="text-center mb-6">
-            <span className="inline-block px-6 py-2 bg-gradient-to-r from-gold-500/20 to-gold-400/20 backdrop-blur-sm border border-gold-300/30 text-gold-700 dark:text-gold-300 rounded-full text-sm font-medium mb-6 relative overflow-hidden">
+            <span className="inline-block px-6 py-2 bg-gradient-to-r from-white/20 to-white/20 backdrop-blur-sm border border-white/30/30 text-white dark:text-white rounded-full text-sm font-medium mb-6 relative overflow-hidden">
               <Crown className="inline w-4 h-4 mr-2" />
               Exclusive Fleet
             </span>
@@ -329,10 +329,10 @@ const YachtCollection: React.FC = () => {
                 Partner
               </span>
               {" "}
-              <span className="inline-block text-gold-600 dark:text-gold-400">
+              <span className="inline-block text-white dark:text-white">
                 Shipyards
               </span>
-              <span className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-gold-500 to-gold-400 dark:from-gold-400 dark:to-gold-600 w-full" />
+              <span className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-white to-white dark:from-white dark:to-white w-full" />
             </h2>
             
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
@@ -421,13 +421,13 @@ const YachtCollection: React.FC = () => {
                       
                       <div className="flex items-center justify-between card-footer">
                         <div className="flex items-center">
-                          <Award className="w-4 h-4 text-gold-500 mr-2" />
+                          <Award className="w-4 h-4 text-white mr-2" />
                           <span className="text-sm text-navy-700 dark:text-gray-400">
                             {shipyard.signature}
                           </span>
                         </div>
                         
-                        <div className="text-gold-500 flex items-center card-cta">
+                        <div className="text-white flex items-center card-cta">
                           <span className="text-sm font-medium mr-1">Explore</span>
                           <ArrowRight className="w-4 h-4" />
                         </div>
@@ -452,9 +452,9 @@ const YachtCollection: React.FC = () => {
             className="relative"
           >
             <Link to="/collection">
-              <Button className="bg-gradient-to-r from-navy-900 to-navy-800 dark:from-gold-600 dark:to-gold-500 text-white dark:text-navy-950 rounded-full px-10 py-6 text-lg font-medium relative overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Button className="bg-gradient-to-r from-navy-900 to-navy-800 dark:from-white dark:to-white text-white dark:text-navy-950 rounded-full px-10 py-6 text-lg font-medium relative overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <span className="flex items-center gap-3 relative z-10">
-                  <Star className="w-5 h-5 text-gold-400 dark:text-navy-900" />
+                  <Star className="w-5 h-5 text-white dark:text-navy-900" />
                   <span>View All Shipyards</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
                 </span>
@@ -479,7 +479,7 @@ const YachtCollection: React.FC = () => {
                 opacity: [0, 0.5, 0],
                 boxShadow: [
                   "0 0 0 rgba(0,0,0,0)", 
-                  "0 0 30px rgba(212,175,55,0.4)", 
+                  "0 0 30px rgba(255, 255, 255,0.4)", 
                   "0 0 0 rgba(0,0,0,0)"
                 ] 
               }}
@@ -611,3 +611,4 @@ const YachtCollection: React.FC = () => {
 };
 
 export default YachtCollection; 
+

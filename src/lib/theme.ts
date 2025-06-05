@@ -17,17 +17,17 @@ export const colors = {
   
   // Accent colors
   gold: {
-    50: '#FFF9E6',
-    100: '#FFF0BF',
-    200: '#FFE799',
-    300: '#FFDE73',
-    400: '#FFD54D',
-    500: '#FFCC26', // Primary gold
-    600: '#D9A80D',
-    700: '#B38600',
-    800: '#8C6400',
-    900: '#664200',
-    950: '#332100'
+    50: '#FFFFFF',
+    100: '#F8F9FA',
+    200: '#F1F3F4',
+    300: '#E8EAED',
+    400: '#FFFFFF',
+    500: '#FFFFFF', // Primary white
+    600: '#F8F9FA',
+    700: '#F1F3F4',
+    800: '#E8EAED',
+    900: '#DEE1E6',
+    950: '#D3D6DA'
   },
   
   // Neutral colors
@@ -76,17 +76,17 @@ export const shadows = {
   xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
   '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
   luxury: '0 20px 50px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1)',
-  goldInset: 'inset 0 1px 2px rgba(255, 204, 38, 0.3)'
+  goldInset: 'inset 0 1px 2px rgba(255, 255, 255, 0.3)'
 };
 
 // Gradients for UI elements
 export const gradients = {
   primary: 'linear-gradient(135deg, #0A243E 0%, #2F4A69 100%)',
-  gold: 'linear-gradient(135deg, #FFCC26 0%, #D9A80D 100%)',
+  gold: 'linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 100%)',
   overlay: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%)',
   navbarGradient: 'linear-gradient(to bottom, rgba(4, 24, 48, 0.9) 0%, rgba(4, 24, 48, 0) 100%)',
-  cardHover: 'linear-gradient(135deg, rgba(255, 204, 38, 0.15) 0%, rgba(255, 204, 38, 0) 100%)',
-  buttonGlow: 'radial-gradient(circle at center, rgba(255, 204, 38, 0.2) 0%, rgba(255, 204, 38, 0) 70%)'
+  cardHover: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%)',
+  buttonGlow: 'radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%)'
 };
 
 // Borders and outlines

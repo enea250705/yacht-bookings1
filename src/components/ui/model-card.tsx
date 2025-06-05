@@ -55,7 +55,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
         >
           <Link 
             to={`/model/${id}`} 
-            className="flex items-center rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-md hover:bg-white/20"
+            className="flex items-center rounded-full bg-navy-900/20 px-5 py-3 text-white backdrop-blur-md hover:bg-navy-900/30"
           >
             <Eye size={18} className="mr-2" />
             <span>View Model</span>
@@ -90,7 +90,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
         {/* View details link */}
         <Link 
           to={`/model/${id}`}
-          className="inline-flex items-center text-sm font-medium text-navy-800 transition-colors hover:text-gold-600 dark:text-gold-400 dark:hover:text-gold-300"
+          className="inline-flex items-center text-sm font-medium text-navy-800 transition-colors hover:text-white dark:text-white dark:hover:text-white"
         >
           <span>View Details</span>
           <motion.div
@@ -105,7 +105,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
       
       {/* Gold accent line at the bottom */}
       <div 
-        className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-gold-400 to-gold-600 transition-all duration-700 group-hover:w-full"
+        className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-white to-white transition-all duration-700 group-hover:w-full"
         style={{ 
           background: `linear-gradient(to right, ${colors.gold[400]}, ${colors.gold[600]})` 
         }}
