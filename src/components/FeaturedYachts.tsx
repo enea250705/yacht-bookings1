@@ -139,12 +139,12 @@ const FeaturedYachts: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                 transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 style={{ transformOrigin: 'center bottom' }}
-                className="inline-block text-white dark:text-white"
+                className="inline-block text-navy-900 dark:text-white"
               >
                 a Sustainable Vision
               </motion.span>
               <motion.span 
-                className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-white to-white dark:from-white dark:to-white"
+                className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-navy-900 to-navy-900 dark:from-white dark:to-white"
                 initial={{ width: 0, opacity: 0 }}
                 whileInView={{ width: "100%", opacity: 1 }}
                 viewport={{ once: true }}

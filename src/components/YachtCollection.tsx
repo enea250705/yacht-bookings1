@@ -329,10 +329,10 @@ const YachtCollection: React.FC = () => {
                 Partner
               </span>
               {" "}
-              <span className="inline-block text-white dark:text-white">
+              <span className="inline-block text-navy-900 dark:text-white">
                 Shipyards
               </span>
-              <span className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-white to-white dark:from-white dark:to-white w-full" />
+              <span className="absolute -bottom-3 left-0 h-1 bg-gradient-to-r from-navy-900 to-navy-900 dark:from-white dark:to-white w-full" />
             </h2>
             
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">

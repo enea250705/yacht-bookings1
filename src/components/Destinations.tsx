@@ -94,7 +94,7 @@ const Destinations: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-sm uppercase tracking-widest text-white font-medium">Exquisite Locations</span>
+              <span className="text-sm uppercase tracking-widest text-navy-900 dark:text-white font-medium">Exquisite Locations</span>
             </motion.div>
             
             <motion.h2 
