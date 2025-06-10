@@ -1,14 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Hero from '@/components/Hero';
-import About from '@/components/About';
-import YachtCollection from '@/components/YachtCollection';
-import FeaturedYachts from '@/components/FeaturedYachts';
-import Services from '@/components/Services';
-import Destinations from '@/components/Destinations';
-import Testimonials from '@/components/Testimonials';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
 // Luxury animation variants
@@ -123,74 +115,6 @@ const Index: React.FC = () => {
 
       <motion.div className="relative z-10" variants={luxuryReveal}>
         <Hero />
-      </motion.div>
-
-      <div className="relative z-10">
-        <About />
-      </div>
-
-      <div className="relative z-10">
-        <YachtCollection />
-      </div>
-
-      <motion.div 
-        className="relative z-10"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-      >
-        <FeaturedYachts />
-      </motion.div>
-
-      <motion.div 
-        className="relative z-10"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-      >
-        <Services />
-      </motion.div>
-
-      <motion.div 
-        className="relative z-10"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-      >
-        <Destinations />
-      </motion.div>
-
-      <motion.div 
-        className="relative z-10"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-      >
-        <Testimonials />
-      </motion.div>
-
-      <motion.div 
-        className="relative z-10"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-      >
-        <Contact />
-      </motion.div>
-
-      <motion.div 
-        className="relative z-10"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-      >
-        <Footer />
       </motion.div>
     </motion.div>
   );

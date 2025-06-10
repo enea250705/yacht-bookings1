@@ -309,7 +309,7 @@ const Hero: React.FC = () => {
                     >
                     <Navigation className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:-rotate-12 duration-300" />
                     </motion.div>
-                    <span>Class Rental</span>
+                    <span>Class Yachts</span>
                   </span>
                   <motion.span 
                     className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"
@@ -370,32 +370,7 @@ const Hero: React.FC = () => {
         </motion.div>
       </div>
       
-      {/* Enhanced scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2, duration: 1 }}
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 border-2 border-white/40/50 rounded-full flex justify-center"
-        >
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-1 h-3 bg-white/40 rounded-full mt-2"
-          />
-        </motion.div>
-        <motion.p
-          className="text-white/70 text-xs mt-2 hidden sm:block"
-          animate={{ opacity: [0.5, 1, 0.5] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          Scroll to explore
-        </motion.p>
-      </motion.div>
+
       
       {/* Static yacht silhouette at bottom with enhanced animation */}
       <motion.div
