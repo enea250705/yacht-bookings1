@@ -143,24 +143,24 @@ const Services: React.FC = () => {
         {/* Animated particles */}
         <motion.div className="absolute inset-0" style={{ opacity }}>
           {[...Array(12)].map((_, i) => (
-      <motion.div
+            <motion.div
               key={i}
-              className="absolute w-2 h-2 bg-gradient-to-r from-white to-white rounded-full"
-        style={{
+              className="absolute w-2 h-2 bg-gradient-to-r from-navy-400 to-navy-600 rounded-full"
+              style={{
                 left: `${10 + (i * 8)}%`,
                 top: `${20 + (i % 3) * 25}%`,
-        }}
-        animate={{
+              }}
+              animate={{
                 y: [-30, 30, -30],
                 opacity: [0.3, 0.8, 0.3],
                 scale: [0.8, 1.2, 0.8]
-        }}
-        transition={{
+              }}
+              transition={{
                 duration: 5 + i,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
           ))}
         </motion.div>
       </div>
@@ -187,10 +187,10 @@ const Services: React.FC = () => {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight"
           >
             <span className="block">Exceptional</span>
-            <span className="block bg-gradient-to-r from-white to-white bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-navy-600 to-navy-800 bg-clip-text text-transparent">
               Maritime Services
             </span>
-              </motion.h2>
+          </motion.h2>
               
               <motion.p 
             variants={itemVariants}
@@ -325,10 +325,12 @@ const Services: React.FC = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <motion.div
-                      className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-white rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300"
+                      className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-navy-600 to-navy-800 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300"
                       whileHover={{ rotate: 5 }}
                     >
-                      {feature.icon}
+                      <div className="text-white">
+                        {feature.icon}
+                      </div>
                     </motion.div>
                     <h4 className="text-white font-semibold text-lg mb-2">
                       {feature.title}
@@ -419,7 +421,7 @@ const Services: React.FC = () => {
                 
                 {/* Connection line */}
                 {index < 2 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-px bg-gradient-to-r from-white to-white z-0" />
+                  <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-px bg-gradient-to-r from-navy-300 to-navy-500 z-0" />
                 )}
               </motion.div>
             ))}

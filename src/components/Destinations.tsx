@@ -64,7 +64,7 @@ const Destinations: React.FC = () => {
     >
       {/* Decorative elements */}
       <motion.div 
-        className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"
+        className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-navy-300/30 to-transparent"
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
@@ -72,7 +72,7 @@ const Destinations: React.FC = () => {
       ></motion.div>
       
       <motion.div 
-        className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"
+        className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-navy-300/30 to-transparent"
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
@@ -106,7 +106,7 @@ const Destinations: React.FC = () => {
             >
               Charter Destinations
               <motion.span 
-                className="absolute -bottom-3 left-0 h-0.5 w-full bg-gradient-to-r from-white to-white"
+                className="absolute -bottom-3 left-0 h-0.5 w-full bg-gradient-to-r from-navy-600 to-navy-800"
                 initial={{ width: 0 }}
                 whileInView={{ width: "100%" }}
                 viewport={{ once: true }}
@@ -212,7 +212,7 @@ const Destinations: React.FC = () => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <motion.div 
-          className="h-px w-full max-w-md mx-auto bg-gradient-to-r from-transparent via-white to-transparent opacity-50"
+          className="h-px w-full max-w-md mx-auto bg-gradient-to-r from-transparent via-navy-400 to-transparent opacity-50"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}

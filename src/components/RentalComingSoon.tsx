@@ -119,11 +119,11 @@ const RentalComingSoon: React.FC = () => {
               className="text-5xl md:text-7xl font-playfair mb-8 relative"
               variants={fadeInUp}
             >
-              <span className="bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
+              <span className="text-white">
                 Luxury Yacht
               </span>
               <br />
-              <span className="bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
+              <span className="text-white">
                 Charters
               </span>
               

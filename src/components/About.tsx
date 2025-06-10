@@ -137,7 +137,7 @@ const About: React.FC = () => {
           className="absolute inset-0 opacity-5"
           style={{ y, rotate }}
         >
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-white to-white rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-navy-200 to-navy-300 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-navy-400 to-navy-600 rounded-full blur-3xl" />
           <div className="absolute top-3/4 left-3/4 w-64 h-64 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full blur-2xl" />
         </motion.div>
@@ -205,7 +205,7 @@ const About: React.FC = () => {
           
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight">
             <span className="block">Crafting Maritime</span>
-            <span className="block bg-gradient-to-r from-white to-white bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-navy-600 to-navy-800 bg-clip-text text-transparent">
               Masterpieces
             </span>
           </h2>

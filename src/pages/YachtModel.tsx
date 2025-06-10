@@ -377,7 +377,7 @@ const YachtModelPage: React.FC = () => {
               initial={{ width: 0, opacity: 0 }}
               animate={{ width: "100px", opacity: 1 }}
               transition={{ duration: 1.2, delay: 0.8 }}
-              className="h-0.5 sm:h-1 bg-gradient-to-r from-white/0 via-white to-white/0 mx-auto mb-3 sm:mb-4 lg:mb-6 rounded-full"
+              className="h-0.5 sm:h-1 bg-gradient-to-r from-white/0 via-white/80 to-white/0 mx-auto mb-3 sm:mb-4 lg:mb-6 rounded-full"
             />
             
             {/* Model subname with enhanced styling */}
