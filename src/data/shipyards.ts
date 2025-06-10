@@ -1816,7 +1816,7 @@ export const shipyardsData: Record<string, ShipyardData> = {
     id: "santasevera",
     name: "Santasevera",
     headline: "Boutique Italian Craftsmanship",
-    description: "Boutique shipyard creating custom luxury vessels with unparalleled attention to detail.",
+    description: "Boutique shipyard creating custom luxury vessels with unparalleled attention to detail, representing the finest traditions of Italian yacht building.",
     image: "/lekker 45-4.jpg",
     models: [
       {
@@ -1824,12 +1824,74 @@ export const shipyardsData: Record<string, ShipyardData> = {
         name: "Santasevera 85",
         length: "85 ft / 25.9 m",
         thumbnail: "/LekkerPage-10.png",
-        shortDesc: "Flagship model showcasing the pinnacle of Italian craftsmanship.",
+        shortDesc: "Flagship model showcasing the pinnacle of Italian craftsmanship with bespoke luxury and exceptional attention to detail.",
         specs: {
           cabins: "4",
           guests: "8",
           engines: "Twin MTU 16V2000 M96L",
           maxSpeed: "28 knots"
+        },
+        gallery: [
+          "/LekkerPage-10.png",
+          "/lekker 45-4.jpg",
+          "/lekker 45-5.jpg"
+        ],
+        description: [
+          "The Santasevera 85 represents the absolute pinnacle of Italian yacht craftsmanship, where every detail is meticulously hand-finished by master artisans who have perfected their skills over generations. This flagship model embodies the boutique shipyard's commitment to creating truly bespoke luxury vessels that exceed the highest expectations.",
+          "Built using only the finest materials and cutting-edge construction techniques, the Santasevera 85 offers unparalleled customization options that allow owners to create a truly unique vessel. From hand-selected exotic woods to custom leather work and precious metal fittings, every element can be tailored to reflect personal taste and lifestyle.",
+          "The sophisticated design combines classic Italian elegance with modern functionality, featuring spacious accommodation for eight guests in four beautifully appointed cabins, each with en-suite facilities. The interior spaces flow seamlessly from formal dining areas to intimate lounges, all designed to maximize comfort and entertaining potential."
+        ],
+        features: {
+          "Technical Specifications": [
+            "Length: 85 ft / 25.9 m",
+            "Beam: 19.7 ft / 6.0 m",
+            "Draft: 6.2 ft / 1.9 m",
+            "Displacement: 154,320 lbs / 70,000 kg",
+            "Fuel capacity: 1,585 US gal / 6,000 L",
+            "Water capacity: 396 US gal / 1,500 L",
+            "Maximum speed: 28 knots",
+            "Cruising speed: 22 knots",
+            "CE Category: A"
+          ],
+          "Engine & Performance": [
+            "Standard: Twin MTU 16V2000 M96L (2,600 HP total)",
+            "ZF Marine transmission",
+            "Conventional shaft drive",
+            "Bow thruster for easy maneuvering",
+            "Advanced fuel management system",
+            "Superior sea-keeping capabilities",
+            "Low noise and vibration levels"
+          ],
+          "Accommodation": [
+            "4 luxurious guest cabins with en-suite bathrooms",
+            "Master suite with king-size berth and dressing area",
+            "VIP cabin with queen-size berth",
+            "Two twin cabins (convertible to doubles)",
+            "Crew quarters for professional service",
+            "Formal dining salon for 8 guests",
+            "Main saloon with entertainment system",
+            "Air conditioning throughout"
+          ],
+          "Luxury Features": [
+            "Hand-crafted Italian furniture",
+            "Bespoke leather and fabric selections",
+            "Precious metal hardware and fittings",
+            "Custom art and decorative elements",
+            "State-of-the-art entertainment systems",
+            "Professional galley equipment",
+            "Wine cellar and bar facilities",
+            "Spa-quality bathroom amenities"
+          ],
+          "Exterior Features": [
+            "Elegant Italian styling",
+            "Spacious aft deck for entertaining",
+            "Hydraulic swim platform",
+            "Integrated seating with storage",
+            "Professional helm station",
+            "Tender garage and launch system",
+            "Premium teak decking throughout",
+            "Custom awning and shade systems"
+          ]
         }
       }
     ].map(enhanceModel)
@@ -1838,7 +1900,7 @@ export const shipyardsData: Record<string, ShipyardData> = {
     id: "salpa",
     name: "Salpa",
     headline: "Mediterranean Elegance and Performance",
-    description: "Builders of elegant Mediterranean-style cruisers with exceptional sea-keeping.",
+    description: "Builders of elegant Mediterranean-style cruisers with exceptional sea-keeping capabilities, combining traditional craftsmanship with modern innovation.",
     image: "/lekker 45-5.jpg",
     models: [
       {
@@ -1846,12 +1908,73 @@ export const shipyardsData: Record<string, ShipyardData> = {
         name: "Salpa 39",
         length: "39 ft / 11.9 m",
         thumbnail: "/LekkerPage-11.png",
-        shortDesc: "Versatile cruiser with exceptional Mediterranean styling.",
+        shortDesc: "Versatile Mediterranean cruiser combining elegant styling with exceptional sea-keeping capabilities and spacious accommodation.",
         specs: {
           cabins: "2",
           guests: "8",
-          engines: "Twin Volvo Penta D6",
+          engines: "Twin Volvo Penta D6-400",
           maxSpeed: "32 knots"
+        },
+        gallery: [
+          "/LekkerPage-11.png",
+          "/lekker 45-5.jpg",
+          "/Salpa_Classy_RY.png"
+        ],
+        description: [
+          "The Salpa 39 embodies the essence of Mediterranean yacht design, where elegant lines meet practical functionality to create a vessel that excels in both coastal cruising and offshore adventures. This sophisticated cruiser showcases the shipyard's commitment to traditional craftsmanship while incorporating modern technology and amenities.",
+          "Built with meticulous attention to detail, the Salpa 39 features a spacious and well-appointed interior that maximizes comfort for up to eight guests. The open-plan layout creates a sense of spaciousness while maintaining the intimate feel that makes this yacht perfect for family cruising and entertaining friends.",
+          "The exterior design reflects classic Mediterranean styling with contemporary touches, featuring clean lines, thoughtful deck space utilization, and the kind of timeless appeal that ensures this yacht will remain as beautiful decades from now as it is today."
+        ],
+        features: {
+          "Technical Specifications": [
+            "Length: 39 ft / 11.9 m",
+            "Beam: 13.1 ft / 4.0 m",
+            "Draft: 3.3 ft / 1.0 m",
+            "Displacement: 22,046 lbs / 10,000 kg",
+            "Fuel capacity: 185 US gal / 700 L",
+            "Water capacity: 105 US gal / 400 L",
+            "Maximum speed: 32 knots",
+            "Cruising speed: 25 knots",
+            "CE Category: B"
+          ],
+          "Engine & Performance": [
+            "Standard: Twin Volvo Penta D6-400 (800 HP total)",
+            "Volvo Penta IPS pod drives",
+            "Joystick docking control",
+            "Electronic throttle and shift",
+            "Fuel-efficient performance",
+            "Excellent handling characteristics",
+            "Superior sea-keeping abilities"
+          ],
+          "Accommodation": [
+            "2 comfortable cabins with en-suite facilities",
+            "Master cabin with double berth and storage",
+            "Guest cabin with twin berths (convertible)",
+            "Open-plan saloon and galley",
+            "Dining area for 6 people",
+            "Fully equipped galley with modern appliances",
+            "Air conditioning throughout",
+            "Ample storage throughout"
+          ],
+          "Mediterranean Features": [
+            "Classic Mediterranean styling",
+            "Premium teak decking",
+            "Spacious aft cockpit for entertaining",
+            "Integrated seating with storage",
+            "Large swim platform with ladder",
+            "Cockpit table and wet bar",
+            "Electric anchor windlass",
+            "Exterior shower and storage"
+          ],
+          "Deck & Outdoor": [
+            "Thoughtful deck layout for easy movement",
+            "Protected helm station with excellent visibility",
+            "Comfortable seating areas throughout",
+            "Storage lockers for equipment and toys",
+            "Hydraulic steering for precise control",
+            "Navigation and safety equipment",
+            "Integrated fender storage"
+          ]
         }
       }
     ].map(enhanceModel)
