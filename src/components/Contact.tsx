@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Instagram } from 'lucide-react';
+import { Mail, Phone, Instagram } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
@@ -26,6 +26,14 @@ const Contact: React.FC = () => {
                   <p className="text-gray-300">class.av.yachts@gmail.com</p>
                 </div>
               </div>
+              
+              <div className="flex items-center justify-center mb-4">
+                <Phone className="mr-3 text-white" size={20} />
+                <div>
+                  <p className="font-medium">Phone</p>
+                  <p className="text-gray-300">+355 69 604 7159</p>
+                </div>
+              </div>
             </div>
             
             <div className="bg-hotel-light-gray p-8 rounded-lg">
@@ -33,7 +41,7 @@ const Contact: React.FC = () => {
               <p className="text-gray-600 mb-6 text-center">Stay updated with our latest offers and news.</p>
               
               <div className="flex justify-center space-x-4">
-                <a href="#" className="bg-white p-3 rounded-full text-navy-900 hover:bg-hotel-navy hover:text-white transition-colors">
+                <a href="https://www.instagram.com/class_yachts_/" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full text-navy-900 hover:bg-hotel-navy hover:text-white transition-colors">
                   <Instagram size={20} />
                 </a>
               </div>

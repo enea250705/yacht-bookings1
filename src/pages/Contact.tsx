@@ -283,7 +283,7 @@ const Contact: React.FC = () => {
                       whileTap={{ scale: 0.95 }}
                     >
                     <a 
-                        href="https://www.instagram.com/ry_class_yachts/" 
+                        href="https://www.instagram.com/class_yachts_/" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center bg-gradient-to-r from-pink-500/20 to-purple-500/20 hover:from-pink-500/30 hover:to-purple-500/30 p-4 rounded-full transition-all duration-300 border border-pink-400/30 group"
@@ -291,7 +291,7 @@ const Contact: React.FC = () => {
                         <Instagram className="text-pink-400 w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
                       </a>
                     </motion.div>
-                    <p className="text-white/60 text-sm mt-3">@ry_class_yachts</p>
+                    <p className="text-white/60 text-sm mt-3">@class_yachts_</p>
                   </div>
                 </motion.div>
 

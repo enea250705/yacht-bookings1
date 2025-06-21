@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <h3 className="text-2xl font-playfair mb-4">Class Yachts</h3>
             <p className="mb-6 text-gray-300">Discover the pinnacle of maritime luxury with our exclusive collection of premium yachts from the world's most prestigious shipyards since 2015.</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-white transition-colors">
+              <a href="https://www.instagram.com/class_yachts_/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="mr-2 text-white" size={18} />
-                <span className="text-gray-300">info@classyachts.eu</span>
+                <span className="text-gray-300">class.av.yachts@gmail.com</span>
               </div>
             </div>
           </div>

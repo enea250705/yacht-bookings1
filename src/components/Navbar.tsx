@@ -412,7 +412,7 @@ const Navbar: React.FC = () => {
                   transition={{ delay: 0.8 }}
                 >
                         <motion.a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/class_yachts_/"
                           target="_blank"
                           rel="noopener noreferrer"
                     className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-500 rounded-lg flex items-center justify-center text-white"

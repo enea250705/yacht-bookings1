@@ -131,9 +131,7 @@ const ShipyardPage: React.FC = () => {
         "image": shipyardsData[shipyardId].image,
         "foundingDate": extendedShipyard?.established,
         "sameAs": [
-          "https://www.facebook.com/vistaoasis",
-          "https://www.instagram.com/vistaoasis",
-          "https://www.linkedin.com/company/vistaoasis"
+          "https://www.instagram.com/class_yachts_/"
         ],
         "address": {
           "@type": "PostalAddress",
@@ -602,8 +600,8 @@ const ShipyardPage: React.FC = () => {
                       )}
                       <div className="flex items-center">
                         <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-white mr-2 sm:mr-3 flex-shrink-0" />
-                        <a href="mailto:info@vistaoasis.com" className="text-blue-100 hover:text-white transition-colors text-sm sm:text-base">
-                          info@vistaoasis.com
+                        <a href="mailto:class.av.yachts@gmail.com" className="text-blue-100 hover:text-white transition-colors text-sm sm:text-base">
+                          class.av.yachts@gmail.com
                         </a>
                       </div>
                     </div>
