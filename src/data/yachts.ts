@@ -328,6 +328,35 @@ export const yachtsData: Yacht[] = [
     enginePower: "2 x 715 HP",
     fuelConsumption: "180 lt/hr"
   },
+  {
+    id: "sea-witch-albania",
+    name: "Sea Witch",
+    model: "Hanse 588",
+    image: "/placeholder.svg",
+    price: "On request",
+    guests: "Up to 8 Guests",
+    cabins: "3 Cabins",
+    crew: "2",
+    length: "56ft | 17.2m",
+    speed: "8 knots",
+    year: "2017",
+    location: "Marina Orikum, Vlorë",
+    destination: "albania",
+    type: "Sailing Yacht",
+    enginePower: "150 HP Diesel",
+    fuelConsumption: "8 lt/hr",
+    features: [
+      "1 Master Cabin with en-suite, queen-size island bed, shower, premium bedding, air conditioning, USB ports",
+      "2 Double Guest Cabins, each with en-suite, shower, storage, lighting, air conditioning, sea view portlight, USB charging",
+      "Spacious outdoor deck with sunbathing and dining area",
+      "Ambient deck lighting & integrated sound system",
+      "Large swim platform with easy access to the sea",
+      "Fully equipped kitchen with induction stove, oven, fridge, freezer, coffee machine, microwave, dishwasher",
+      "Ideal for day cruises along Albanian Riviera",
+      "Perfect for multi-day charters for families or small groups",
+      "Suitable for private events (sunset dinners, celebrations, parties)"
+    ]
+  },
 
   // Montenegro Yachts
   {
