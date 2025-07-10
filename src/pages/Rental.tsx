@@ -12,8 +12,8 @@ const rentalDestinations = [
     id: 'montenegro',
     name: 'Montenegro',
     image: '/tirana.jpeg',
-    description: 'Premium yacht charters from Porto Montenegro and Tivat with luxury mega yachts and traditional gulets.',
-    features: ['Sanlorenzo SD92 (€76,800/week)', 'Traditional Gulets Available', 'Lagoon 50 Catamaran', 'Porto Montenegro Marina'],
+    description: 'Luxury yacht charters from Porto Montenegro and Tivat, offering exclusive experiences along the stunning Montenegrin coast.',
+    features: ['Premium Yacht Selection', 'Experienced Crew', 'Luxury Service', 'Porto Montenegro Marina'],
     priceRange: 'From €1,500/day',
     flag: '🇲🇪'
   },
@@ -21,8 +21,8 @@ const rentalDestinations = [
     id: 'croatia',
     name: 'Croatia',
     image: '/CabinLowres-38-1.jpg',
-    description: 'Exclusive 40m motor sailor Alessandro available for luxury Croatian island hopping charters.',
-    features: ['Alessandro 40m Motor Sailor', '10 Guests + 6 Crew', 'Custom Design Yacht', 'Split Base Location'],
+    description: 'Experience the beauty of Croatian islands with our luxury yacht charter services based in Split.',
+    features: ['Professional Crew', 'Custom Itineraries', 'Luxury Amenities', 'Split Base Location'],
     priceRange: 'Price on request',
     flag: '🇭🇷'
   },
@@ -30,8 +30,8 @@ const rentalDestinations = [
     id: 'greece',
     name: 'Greece',
     image: '/38 GRAND SPORT-01.jpg',
-    description: 'Comprehensive fleet of 16 yachts across Greek islands with half-day and full-day charter options.',
-    features: ['16 Yacht Fleet Available', 'Half-Day from €800', 'Full-Day from €1,100', 'Multiple Island Bases'],
+    description: 'Explore the Greek islands with our premium yacht fleet offering flexible charter options.',
+    features: ['Premium Fleet', 'Half-Day from €800', 'Full-Day from €1,100', 'Multiple Island Bases'],
     priceRange: 'From €800/half-day',
     flag: '🇬🇷'
   },
@@ -39,8 +39,8 @@ const rentalDestinations = [
     id: 'albania',
     name: 'Albania',
     image: '/OMEGA 47-02.jpg',
-    description: 'Largest fleet with 16 yachts based in Himarë, Sarandë, Orikum, and Vlorë for Albanian Riviera exploration.',
-    features: ['16 Yacht Fleet Available', 'Himarë & Sarandë Bases', 'Day & Weekly Charters', 'Mega Yacht Options'],
+    description: 'Discover the Albanian Riviera with our extensive fleet based in prime locations including Himarë, Sarandë, Orikum, and Vlorë.',
+    features: ['Premium Fleet', 'Multiple Base Locations', 'Day & Weekly Charters', 'Luxury Yachts'],
     priceRange: 'From €500/day',
     flag: '🇦🇱'
   }
@@ -208,13 +208,13 @@ const Rental: React.FC = () => {
                 Contact our charter specialists to plan your perfect yacht experience
               </p>
               
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <motion.div variants={fadeInUp} className="text-center">
                   <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Phone className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">Call Us</h3>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
+                  <p className="text-gray-300">+355 69 604 7159</p>
                 </motion.div>
                 
                 <motion.div variants={fadeInUp} className="text-center">
@@ -222,23 +222,16 @@ const Rental: React.FC = () => {
                     <Mail className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
-                  <p className="text-gray-300">charter@example.com</p>
-                </motion.div>
-                
-                <motion.div variants={fadeInUp} className="text-center">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Calendar className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Book Online</h3>
-                  <p className="text-gray-300">24/7 Availability</p>
+                  <p className="text-gray-300">class.av.yachts@gmail.com</p>
                 </motion.div>
               </div>
               
               <Button 
                 size="lg" 
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold"
+                onClick={() => navigate('/contact')}
               >
-                Request Charter Quote
+                Contact Us
               </Button>
             </motion.div>
           </motion.div>
