@@ -138,7 +138,7 @@ const Collection: React.FC = () => {
     },
     {
       name: 'MAORI Yachts',
-      logo: '/LekkerPage-08.png',
+      logo: '/M46-inbound3.jpg',
       description: 'Italian Excellence in Luxury Tenders',
       slug: 'maori',
       founded: '2008',
@@ -147,7 +147,7 @@ const Collection: React.FC = () => {
     },
     {
       name: 'Reborn Yachts',
-      logo: '/lekker 45-2.jpg',
+      logo: '/CabinLowres-38-3.jpg',
       description: 'Dutch Craftsmanship & Future-Classic Design',
       slug: 'reborn',
       founded: '2015',
@@ -156,7 +156,7 @@ const Collection: React.FC = () => {
     },
     {
       name: 'TECHNOHULL',
-      logo: '/LEKKER 38-1.jpg',
+      logo: '/38 GRAND SPORT-01.jpg',
       description: 'Performance with Absolute Control',
       slug: 'technohull',
       founded: '1995',
@@ -165,7 +165,7 @@ const Collection: React.FC = () => {
     },
     {
       name: 'LEKKER Boats',
-      logo: '/LekkerPage-08.png',
+      logo: '/LEKKER 38-1.jpg',
       description: 'Dutch Design Meets Modern Luxury',
       slug: 'lekker',
       founded: '2018',
